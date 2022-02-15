@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="uz.behzoddev.restaurantpos.view.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/actionMainFragmentToMenuSettingsFragment"
+            app:destination="@id/menuSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuSettingsFragment"
+        android:name="uz.behzoddev.restaurantpos.view.menu_settings.MenuSettingsFragment"
+        android:label="fragment_menu_setting"
+        tools:layout="@layout/fragment_menu_setting" >
+        <action
+            android:id="@+id/actionMenuSettingsFragmentToMenuManagementFragment"
+            app:destination="@id/menuManagementFragment" />
+        <action
+            android:id="@+id/actionMenuSettingsFragmentToOptionSettingsFragment"
+            app:destination="@id/optionSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuManagementFragment"
+        android:name="uz.behzoddev.restaurantpos.view.menu_management.MenuManagementFragment"
+        android:label="fragment_menu_management"
+        tools:layout="@layout/fragment_menu_management" />
+    <fragment
+        android:id="@+id/optionSettingsFragment"
+        android:name="uz.behzoddev.restaurantpos.view.option_settings.OptionSettingsFragment"
+        android:label="fragment_option_settings"
+        tools:layout="@layout/fragment_option_settings" />
+</navigation>
