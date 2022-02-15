@@ -56,4 +56,12 @@
         android:textStyle="bold"
         app:cornerRadius="@dimen/dimen_40dp" />
 
+    <Spinner
+        android:id="@+id/spinnerLanguage"
+        android:layout_width="@dimen/dimen_400dp"
+        android:layout_height="@dimen/dimen_75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
 </RelativeLayout>
