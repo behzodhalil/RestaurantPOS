@@ -22,6 +22,8 @@ data class FoodItem(
     val foodItemCategory : String,
     @ColumnInfo(name = RoomContract.FoodItem.FOOD_ITEM_PHOTO)
     val foodItemPhoto : String,
+    @ColumnInfo(name = RoomContract.FoodItem.FOOD_ITEM_PAID)
+    var foodItemIsPaid: Boolean = false,
     @ColumnInfo(name = RoomContract.FoodItem.FOOD_ITEM_ID)
     @PrimaryKey(autoGenerate = true)
     var foodItemId : Long = 0
