@@ -9,7 +9,7 @@
         <entry key="app/src/main/res/layout/fragment_add_menu.xml" value="0.14" />
         <entry key="app/src/main/res/layout/fragment_env_settings.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_menu_management.xml" value="0.11875" />
+        <entry key="app/src/main/res/layout/fragment_menu_management.xml" value="0.12" />
         <entry key="app/src/main/res/layout/fragment_menu_setting.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_option_settings.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_option_setttings.xml" value="0.11875" />
@@ -23,7 +23,11 @@
         <entry key="app/src/main/res/layout/fragment_report.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_store_settings.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fraqgment_update_menu.xml" value="0.11875" />
+        <entry key="app/src/main/res/layout/item_food.xml" value="0.11875" />
+        <entry key="app/src/main/res/layout/item_food_settings.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/item_food_settings_row.xml" value="0.12" />
         <entry key="app/src/main/res/layout/item_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/layout_food_settings_item.xml" value="0.14" />
       </map>
     </option>
   </component>
