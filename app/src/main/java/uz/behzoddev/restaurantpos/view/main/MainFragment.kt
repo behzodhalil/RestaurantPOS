@@ -4,10 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import uz.behzoddev.restaurantpos.common.BaseFragment
+import android.widget.Spinner
+import uz.behzoddev.restaurantpos.common.base.BaseFragment
 import uz.behzoddev.restaurantpos.databinding.FragmentMainBinding
 
 class MainFragment : BaseFragment<FragmentMainBinding>() {
+
+    private lateinit var languageSpinner: Spinner
 
     override fun getViewBinding(
         inflater: LayoutInflater,

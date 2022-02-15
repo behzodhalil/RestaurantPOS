@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import uz.behzoddev.restaurantpos.common.BaseFragment
+import uz.behzoddev.restaurantpos.common.base.BaseFragment
 import uz.behzoddev.restaurantpos.databinding.FragmentMenuManagementBinding
 
 class MenuManagementFragment : BaseFragment<FragmentMenuManagementBinding>() {

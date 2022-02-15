@@ -1,7 +1,8 @@
-package uz.behzoddev.restaurantpos
+package uz.behzoddev.restaurantpos.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import uz.behzoddev.restaurantpos.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
