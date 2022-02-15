@@ -70,15 +70,16 @@ dependencies {
     implementation "androidx.viewpager2:viewpager2:$viewPager2_version"
 
     // Lifecycle
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1"
 
     // Activity & Fragment KTX
     implementation "androidx.fragment:fragment-ktx:1.4.1"
     implementation "androidx.activity:activity-ktx:1.4.0"
     implementation 'androidx.appcompat:appcompat:1.4.1'
 
-    // Timber
+    // Timber & Logger
     implementation "com.jakewharton.timber:timber:$timber_version"
+    implementation "com.orhanobut:logger:$logger_version"
 }
