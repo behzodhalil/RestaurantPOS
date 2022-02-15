@@ -7,6 +7,7 @@ buildscript {
         coroutine_version = "1.5.2"
         work_version = "2.7.1"
         viewPager2_version = "1.0.0"
+        timber_version = "5.0.1"
     }
 
     dependencies {
