@@ -8,4 +8,20 @@
     <!-- Menu Settings Texts -->
     <string name="text_menu_management">메뉴 관리</string>
     <string name="text_option_settings">옵션 설정</string>
+
+    <!-- Food Settings Texts -->
+    <string name="text_food_settings_name">이름</string>
+    <string name="text_food_settings_id">NO</string>
+    <string name="text_food_settings_price">가격</string>
+    <string name="text_food_settings_category">종류</string>
+
+    <!-- Menu Management Texts -->
+    <string name="text_menu_management_add">메뉴 추가</string>
+    <string name="text_menu_management_all">모든 메뉴</string>
+    <string name="text_menu_management_delete">메뉴 삭제</string>
+
+    <!-- Option Settings Texts -->
+    <string name="text_option_settings_env">환경 설정</string>
+    <string name="text_option_settings_pin">PIN 번호 설정</string>
+    <string name="text_option_settings_store">매장 설정</string>
 </resources>

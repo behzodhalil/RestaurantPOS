@@ -5,6 +5,7 @@
     <dimen name="font_size_10sp">10sp</dimen>
     <dimen name="font_size_20sp">20sp</dimen>
     <dimen name="font_size_30sp">30sp</dimen>
+    <dimen name="font_size_35sp">35sp</dimen>
     <dimen name="font_size_40sp">40sp</dimen>
     <dimen name="font_size_50sp">50sp</dimen>
     <dimen name="font_size_60sp">60sp</dimen>
@@ -81,10 +82,12 @@
     <dimen name="dimen_250dp">250dp</dimen>
     <dimen name="dimen_300dp">300dp</dimen>
     <dimen name="dimen_350dp">350dp</dimen>
+    <dimen name="dimen_371dp">371dp</dimen>
     <dimen name="dimen_400dp">400dp</dimen>
     <dimen name="dimen_450dp">450dp</dimen>
     <dimen name="dimen_500dp">500dp</dimen>
     <dimen name="dimen_600dp">600dp</dimen>
     <dimen name="dimen_700dp">700dp</dimen>
     <dimen name="dimen_800dp">800dp</dimen>
+    <dimen name="dimen_1213dp">1213dp</dimen>
 </resources>
