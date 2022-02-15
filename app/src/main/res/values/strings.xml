@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RestaurantPOS</string>
+    <string name="text_order_store">매장</string>
+    <string name="text_order_take_out">테이크 아웃</string>
+    <string name="text_store_logo">Store Logo</string>
+    <string name="text_mooing_logo">Mooing Logo</string>
+
+    <!-- Menu Settings Texts -->
+    <string name="text_menu_management">메뉴 관리</string>
+    <string name="text_option_settings">옵션 설정</string>
+</resources>
