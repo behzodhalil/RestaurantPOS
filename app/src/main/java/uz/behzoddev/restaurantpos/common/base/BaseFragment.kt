@@ -1,4 +1,4 @@
-package uz.behzoddev.restaurantpos.common
+package uz.behzoddev.restaurantpos.common.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
