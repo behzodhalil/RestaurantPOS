@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="uz.behzoddev.restaurantpos.view.main.MainFragment"
+        android:name="uz.behzoddev.restaurantpos.view.main.DashboardFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_dashboard" >
         <action
             android:id="@+id/actionMainFragmentToMenuSettingsFragment"
             app:destination="@id/menuSettingsFragment" />

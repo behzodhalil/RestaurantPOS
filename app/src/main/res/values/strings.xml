@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">RestaurantPOS</string>
+
+    <!-- Dashboard Texts -->
     <string name="text_order_store">매장</string>
     <string name="text_order_take_out">포장</string>
     <string name="text_store_logo">매장 로고</string>
@@ -19,6 +21,7 @@
     <string name="text_menu_management_add">메뉴 추가</string>
     <string name="text_menu_management_all">모든 메뉴</string>
     <string name="text_menu_management_delete">메뉴 삭제</string>
+    <string name="text_menu_management_search">검색</string>
 
     <!-- Option Settings Texts -->
     <string name="text_option_settings_env">환경 설정</string>
@@ -28,4 +31,15 @@
     <!-- Language Texts -->
     <string name="text_language_name">English</string>
     <string name="text_language_icon">Language Icon</string>
+
+    <!-- Menu Add & Update Texts -->
+    <string name="text_menu_add_name">메뉴 이름</string>
+    <string name="text_menu_add_price">메뉴 가격</string>
+    <string name="text_menu_add_quantity">메뉴 수량</string>
+    <string name="text_menu_add_category">메뉴 종류</string>
+    <string name="text_menu_add_photo">메뉴 사진</string>
+    <string name="text_menu_add">메뉴 추가</string>
+    <string name="text_menu_update">메뉴 수정</string>
+
+
 </resources>
