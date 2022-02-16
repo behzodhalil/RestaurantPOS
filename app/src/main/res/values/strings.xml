@@ -7,6 +7,37 @@
     <string name="text_store_logo">매장 로고</string>
     <string name="text_mooing_logo">무잉 로고</string>
 
+    <!-- Order Texts -->
+    <string name="text_order_home_button">홈</string>
+    <string name="text_order_back_button">뒤</string>
+    <string name="text_order_total_amount">전체 금액</string>
+    <string name="text_order_menu">메뉴</string>
+    <string name="text_order_menu_type">메뉴 종류</string>
+    <string name="text_order_quantity">수량</string>
+    <string name="text_order_item_price">가격</string>
+    <string name="text_order_cancel">주문 취소</string>
+    <string name="text_order_complete">주문 왼료</string>
+
+    <!-- Order Confirm Texts -->
+    <string name="text_order_confirm">주문 확인</string>
+    <string name="text_order_confirm_list">목록</string>
+    <string name="text_order_confirm_quantity">주문 수량</string>
+    <string name="text_oder_confirm_price">가격</string>
+    <string name="text_order_confirm_cancel">취소</string>
+    <string name="text_order_confirm_complete">왼료</string>
+
+    <!-- Notice No Menus Texts -->
+    <string name="text_notice_no_menus">알림</string>
+    <string name="text_notice_description">선택한 메뉴가 없습니다. 메뉴 선택 후 다시 시도해 주세요.</string>
+    <string name="text_notice_confirm">확인</string>
+
+    <!-- Payment Texts -->
+    <string name="text_payment_way">신용/체크카드 결제</string>
+    <string name="text_payment_description">카드를 끝까지 넣어주세요</string>
+    <string name="text_payment_purchase_amount">구매 금액</string>
+    <string name="text_payment_amount">결제 금액</string>
+    <string name="text_payment_item_amount">총 수량</string>
+
     <!-- Menu Settings Texts -->
     <string name="text_menu_management">메뉴 관리</string>
     <string name="text_option_settings">옵션 설정</string>
@@ -27,6 +58,29 @@
     <string name="text_option_settings_env">환경 설정</string>
     <string name="text_option_settings_pin">PIN 번호 설정</string>
     <string name="text_option_settings_store">매장 설정</string>
+
+    <!-- Environment Settings Texts -->
+    <string name="text_environment_settings_back">뒤</string>
+    <string name="text_environment_settings_kiosk">키오스크 정보</string>
+    <string name="text_environment_settings_general_information">일반 사항</string>
+
+    <!-- Kiosk Information Texts -->
+    <string name="text_kiosk_information_name">키오스크 이름</string>
+    <string name="text_kiosk_information_version">키오스크 버전</string>
+    <string name="text_kiosk_information_type">키오스크 유형</string>
+    <string name="text_kiosk_information_developer">키오스크 개발자</string>
+
+    <!-- Store Setting Texts -->
+    <string name="text_store_setting_store_logo">매장 로고</string>
+    <string name="text_store_setting_mooing_logo">무잉 로고</string>
+    <string name="text_store_setting_merchant_information">가맹점정보</string>
+    <string name="text_store_setting_basic_information">기본 정보</string>
+    <string name="text_store_setting_more_information">추가 정보</string>
+    <string name="text_store_setting_save">저장</string>
+    <string name="text_store_setting_branch_name">지점명</string>
+    <string name="text_store_setting_owner_name">점주명</string>
+    <string name="text_store_setting_phone_number">전화 번호</string>
+    <string name="text_store_setting_address">주소</string>
 
     <!-- Language Texts -->
     <string name="text_language_name">English</string>
