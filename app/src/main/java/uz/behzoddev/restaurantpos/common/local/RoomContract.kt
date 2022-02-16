@@ -1,6 +1,7 @@
 package uz.behzoddev.restaurantpos.common.local
 
 object RoomContract {
+    const val DATABASE_NAME = "restaurant_database"
     object FoodItem {
         const val FOOD_ITEM_TABLE = "food_item_table"
         const val FOOD_ITEM_ID = "food_item_id"
