@@ -6,7 +6,7 @@ import kotlin.math.log
 /**
  * Extension function that wraps Timber's debug logging
  */
-internal inline fun debug(message:String) { Timber.d(message) }
+internal fun debug(message:String) { Timber.d(message) }
 
 /**
  * Extension function that wraps Timber's info logging
