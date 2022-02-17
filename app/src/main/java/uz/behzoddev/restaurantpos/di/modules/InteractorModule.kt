@@ -82,7 +82,7 @@ abstract class InteractorModule {
     @Binds
     @Singleton
     internal abstract fun provideFetchAllStoresInteractor(
-        fetchAllStoresInteractor: FetchAllStoresByIdInteractorImpl
+        fetchAllStoresInteractor: FetchAllStoresInteractorImpl
     ): FetchAllStoresInteractor
 
     @Binds
