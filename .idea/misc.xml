@@ -3,18 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/dialog_order_confirm.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_add_food.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_add_menu.xml" value="0.14" />
         <entry key="app/src/main/res/layout/fragment_add_menu_category.xml" value="0.11875" />
-        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.11875" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_enter_password_to_menu_settings.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_env_settings.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_menu_management.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/fragment_menu_management.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_menu_setting.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_option_settings.xml" value="0.11875" />
+        <entry key="app/src/main/res/layout/fragment_option_settings.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_option_setttings.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_order_confirm.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_order_store.xml" value="0.12" />

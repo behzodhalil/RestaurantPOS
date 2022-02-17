@@ -9,7 +9,7 @@ class ItemDataSourceImpl @Inject constructor(
     private val itemDao: FoodItemDao
 ) : ItemDataSource {
     override suspend fun insertFoodItem(foodItem: FoodItem): Long {
-        return itemDao.insertFoodItem(foodItem)
+        return itemDao.saveFoodItem(foodItem)
     }
 
     override suspend fun updateFoodItem(foodItem: FoodItem): Int {

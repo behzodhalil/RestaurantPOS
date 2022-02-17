@@ -8,8 +8,8 @@ plugins {
 }
 
 android {
-    compileSdk  = Configs.compileSdkVersion
 
+    compileSdk = 31
     defaultConfig {
         applicationId = Configs.applicationIdName
         minSdk = Configs.minSdkVersion
@@ -42,8 +42,6 @@ android {
 }
 
 dependencies {
-
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     core()
     appCompat()
     materialDesign()

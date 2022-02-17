@@ -9,7 +9,7 @@ class StoreDataSourceImpl @Inject constructor(
     private val storeDao: FoodStoreDao
 ) : StoreDataSource {
     override suspend fun insertStore(foodStore: FoodStore): Long {
-        return storeDao.insertFoodStore(foodStore)
+        return storeDao.saveFoodStore(foodStore)
     }
 
     override suspend fun updateStore(foodStore: FoodStore): Int {

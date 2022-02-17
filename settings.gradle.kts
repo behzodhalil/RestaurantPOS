@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "RestaurantPOS"
-include (":app")
+include (":app",":password-view")
