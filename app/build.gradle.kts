@@ -24,7 +24,7 @@ android {
     }
 
     buildTypes {
-        getByName("release") {
+        getByName(BuildTypes.RELEASE) {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -44,13 +44,11 @@ android {
 dependencies {
 
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-
     core()
     appCompat()
     materialDesign()
     constraintLayout()
-    junit()
-    espresso()
+    test()
     navigation()
     room()
     hilt()
