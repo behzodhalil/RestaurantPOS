@@ -14,7 +14,7 @@ interface FoodMenuDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertMenu(foodMenu: FoodMenu):Long
     @Update(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun updateMenu(foodMenu: FoodMenu): Long
+    suspend fun updateMenu(foodMenu: FoodMenu): Int
     @Delete
     suspend fun delete(foodMenu: FoodMenu): Int
     @Query("SELECT * FROM food_menu_table")

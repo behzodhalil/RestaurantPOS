@@ -7,7 +7,7 @@ import javax.inject.Inject
 class UpdateStoreInteractorImpl @Inject constructor(
     private val storeRepository: StoreRepository
 ) : UpdateStoreInteractor {
-    override suspend fun invoke(foodStore: FoodStore): Long {
+    override suspend fun invoke(foodStore: FoodStore): Int {
         return storeRepository.updateStore(foodStore)
     }
 }

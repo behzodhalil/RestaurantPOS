@@ -12,7 +12,7 @@ class StoreDataSourceImpl @Inject constructor(
         return storeDao.insertFoodStore(foodStore)
     }
 
-    override suspend fun updateStore(foodStore: FoodStore): Long {
+    override suspend fun updateStore(foodStore: FoodStore): Int {
         return storeDao.updateFoodStore(foodStore)
     }
 

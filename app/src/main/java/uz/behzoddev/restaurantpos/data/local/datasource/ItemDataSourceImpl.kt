@@ -12,7 +12,7 @@ class ItemDataSourceImpl @Inject constructor(
         return itemDao.insertFoodItem(foodItem)
     }
 
-    override suspend fun updateFoodItem(foodItem: FoodItem): Long {
+    override suspend fun updateFoodItem(foodItem: FoodItem): Int {
         return itemDao.updateFoodItem(foodItem)
     }
 

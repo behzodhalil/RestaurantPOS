@@ -5,7 +5,7 @@ import uz.behzoddev.restaurantpos.data.local.models.FoodMenu
 
 interface MenuDataSource {
     suspend fun insertMenu(foodMenu: FoodMenu): Long
-    suspend fun updateMenu(foodMenu: FoodMenu): Long
+    suspend fun updateMenu(foodMenu: FoodMenu): Int
     suspend fun deleteMenu(foodMenu: FoodMenu): Int
     fun fetchAllMenus(): Flow<List<FoodMenu>>
 }

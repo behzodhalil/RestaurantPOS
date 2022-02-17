@@ -15,7 +15,7 @@ class StoreRepositoryImpl @Inject constructor(
         return storeDataSource.insertStore(foodStore)
     }
 
-    override suspend fun updateStore(foodStore: FoodStore): Long {
+    override suspend fun updateStore(foodStore: FoodStore): Int {
         return storeDataSource.updateStore(foodStore)
     }
 

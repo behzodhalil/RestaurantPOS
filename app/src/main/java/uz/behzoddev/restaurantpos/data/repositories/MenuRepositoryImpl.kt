@@ -14,7 +14,7 @@ class MenuRepositoryImpl @Inject constructor(
         return menuDataSource.insertMenu(foodMenu)
     }
 
-    override suspend fun updateMenu(foodMenu: FoodMenu): Long {
+    override suspend fun updateMenu(foodMenu: FoodMenu): Int {
         return menuDataSource.updateMenu(foodMenu)
     }
 

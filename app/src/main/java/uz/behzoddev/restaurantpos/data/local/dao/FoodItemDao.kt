@@ -14,7 +14,7 @@ interface FoodItemDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertFoodItem(foodItem: FoodItem): Long
     @Update(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun updateFoodItem(foodItem: FoodItem): Long
+    suspend fun updateFoodItem(foodItem: FoodItem): Int
     @Delete
     suspend fun deleteFoodItem(foodItem: FoodItem): Int
     @Query("SELECT * FROM food_item_table")

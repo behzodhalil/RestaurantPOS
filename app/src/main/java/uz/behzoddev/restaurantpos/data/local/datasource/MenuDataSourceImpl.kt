@@ -12,7 +12,7 @@ class MenuDataSourceImpl @Inject constructor(
         return menuDao.insertMenu(foodMenu)
     }
 
-    override suspend fun updateMenu(foodMenu: FoodMenu): Long {
+    override suspend fun updateMenu(foodMenu: FoodMenu): Int {
         return menuDao.updateMenu(foodMenu)
     }
 
