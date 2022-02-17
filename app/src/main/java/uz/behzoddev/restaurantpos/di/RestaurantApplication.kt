@@ -30,6 +30,6 @@ class RestaurantApplication : Application() {
             }
         })
 
-        debug { "onCreate: Inside Application" }
+        debug { "onCreate() method is created" }
     }
 }
