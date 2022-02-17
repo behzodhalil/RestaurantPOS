@@ -9,7 +9,7 @@ class InsertMenuInteractorImpl @Inject constructor(
     @RepositoryBinds private val menuRepository: MenuRepository
 ) : InsertMenuInteractor {
 
-    override fun invoke(foodMenu: FoodMenu): Long {
-        TODO("Not yet implemented")
+    override suspend fun invoke(foodMenu: FoodMenu): Long {
+        return menuRepository.insertMenu(foodMenu)
     }
 }
