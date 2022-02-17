@@ -4,6 +4,11 @@ import androidx.room.*
 import kotlinx.coroutines.flow.Flow
 import uz.behzoddev.restaurantpos.data.local.models.FoodStore
 
+/**
+ * Provides access to read/write operations on the food store table.
+ * Used by the data source to format query, insert, delete results for use in the UI.
+ */
+
 @Dao
 interface FoodStoreDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
