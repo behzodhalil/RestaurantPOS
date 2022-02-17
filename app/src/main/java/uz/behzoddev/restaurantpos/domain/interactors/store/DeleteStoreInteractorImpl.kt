@@ -7,7 +7,7 @@ import javax.inject.Inject
 class DeleteStoreInteractorImpl @Inject constructor(
     private val storeRepository: StoreRepository
 ) : DeleteStoreInteractor {
-    override suspend fun invoke(foodStore: FoodStore): Long {
+    override suspend fun invoke(foodStore: FoodStore): Int {
         return storeRepository.deleteStore(foodStore)
     }
 }

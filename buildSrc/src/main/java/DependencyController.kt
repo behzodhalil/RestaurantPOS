@@ -33,6 +33,7 @@ fun DependencyHandler.navigation() {
 
 fun DependencyHandler.room() {
     implementation(Dependencies.roomRuntime)
+    implementation(Dependencies.roomKtx)
     kapt (Dependencies.roomKapt)
 }
 

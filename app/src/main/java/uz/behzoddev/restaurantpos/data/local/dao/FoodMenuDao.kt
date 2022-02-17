@@ -16,7 +16,7 @@ interface FoodMenuDao {
     @Update(onConflict = OnConflictStrategy.REPLACE)
     suspend fun updateMenu(foodMenu: FoodMenu): Long
     @Delete
-    suspend fun delete(foodMenu: FoodMenu): Long
+    suspend fun delete(foodMenu: FoodMenu): Int
     @Query("SELECT * FROM food_menu_table")
     fun fetchAllMenus() : Flow<List<FoodMenu>>
 }

@@ -18,7 +18,7 @@ class ItemRepositoryImpl @Inject constructor(
         return itemDataSource.updateFoodItem(foodItem)
     }
 
-    override suspend fun deleteFoodItem(foodItem: FoodItem): Long {
+    override suspend fun deleteFoodItem(foodItem: FoodItem): Int {
         return itemDataSource.deleteFoodItem(foodItem)
     }
 

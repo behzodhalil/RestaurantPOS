@@ -16,7 +16,7 @@ interface FoodItemDao {
     @Update(onConflict = OnConflictStrategy.REPLACE)
     suspend fun updateFoodItem(foodItem: FoodItem): Long
     @Delete
-    suspend fun deleteFoodItem(foodItem: FoodItem): Long
+    suspend fun deleteFoodItem(foodItem: FoodItem): Int
     @Query("SELECT * FROM food_item_table")
     fun fetchAllFoodItems(): Flow<List<FoodItem>>
     @Query("SELECT * FROM food_item_table ORDER BY food_item_name")

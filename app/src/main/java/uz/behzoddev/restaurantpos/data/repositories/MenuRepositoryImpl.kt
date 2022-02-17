@@ -18,7 +18,7 @@ class MenuRepositoryImpl @Inject constructor(
         return menuDataSource.updateMenu(foodMenu)
     }
 
-    override suspend fun deleteMenu(foodMenu: FoodMenu): Long {
+    override suspend fun deleteMenu(foodMenu: FoodMenu): Int {
         return menuDataSource.deleteMenu(foodMenu)
     }
 

@@ -16,7 +16,7 @@ class MenuDataSourceImpl @Inject constructor(
         return menuDao.updateMenu(foodMenu)
     }
 
-    override suspend fun deleteMenu(foodMenu: FoodMenu): Long {
+    override suspend fun deleteMenu(foodMenu: FoodMenu): Int {
         return menuDao.delete(foodMenu)
     }
 

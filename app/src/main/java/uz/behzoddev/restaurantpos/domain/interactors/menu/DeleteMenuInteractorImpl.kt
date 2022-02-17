@@ -8,7 +8,7 @@ import javax.inject.Inject
 class DeleteMenuInteractorImpl @Inject constructor(
     @RepositoryBinds private val menuRepository: MenuRepository
 ): DeleteMenuInteractor {
-    override suspend fun invoke(foodMenu: FoodMenu): Long {
+    override suspend fun invoke(foodMenu: FoodMenu): Int {
         return menuRepository.deleteMenu(foodMenu)
     }
 }

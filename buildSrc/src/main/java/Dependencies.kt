@@ -21,12 +21,13 @@ object Dependencies {
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.espressoVersion}"
 
     // Jetpack Navigation
-    const val navigationFragment = "androidx.navigation:navigation-fragment-ktx=${Versions.navigationVersion}"
+    const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigationVersion}"
     const val navigationUI= "androidx.navigation:navigation-ui-ktx:${Versions.navigationVersion}"
 
     // Room
     const val roomRuntime = "androidx.room:room-runtime:${Versions.roomVersion}"
     const val roomKapt = "androidx.room:room-compiler:${Versions.roomVersion}"
+    const val roomKtx = "androidx.room:room-ktx:${Versions.roomVersion}"
 
     // Hilt
     const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hiltVersion}"
