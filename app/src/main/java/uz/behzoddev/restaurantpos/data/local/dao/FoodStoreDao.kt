@@ -12,7 +12,7 @@ import uz.behzoddev.restaurantpos.data.local.models.FoodStore
 @Dao
 interface FoodStoreDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertFoodStore(foodStore: FoodStore): Long
+    suspend fun saveFoodStore(foodStore: FoodStore): Long
     @Update(onConflict = OnConflictStrategy.REPLACE)
     suspend fun updateFoodStore(foodStore: FoodStore): Int
     @Delete()
