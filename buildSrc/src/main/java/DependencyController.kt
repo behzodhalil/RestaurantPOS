@@ -20,12 +20,9 @@ fun DependencyHandler.constraintLayout() {
     implementation(Dependencies.constraintLayout)
 }
 
-fun DependencyHandler.junit() {
+fun DependencyHandler.test() {
     testImplementation(Dependencies.jUnit)
     androidTestImplementation(Dependencies.jUnitTest)
-}
-
-fun DependencyHandler.espresso() {
     androidTestImplementation(Dependencies.espresso)
 }
 

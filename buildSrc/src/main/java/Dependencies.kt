@@ -15,11 +15,9 @@ object Dependencies {
     // ConstraintLayout
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayoutVersion}"
 
-    // JUnit
+    // Test
     const val jUnit = "junit:junit:${Versions.jUnitVersion}"
     const val jUnitTest = "androidx.test.ext:junit:${Versions.jUnitTestVersion}"
-
-    // Espresso
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.espressoVersion}"
 
     // Jetpack Navigation
