@@ -17,13 +17,14 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 abstract class RepositoryModule {
 
+    // Option 1 with internal keyword
     @Binds
-    @RepositoryBinds
     @Singleton
-    abstract fun provideItemRepositoryInstance(
+    internal abstract fun provideItemRepositoryInstance(
         itemRepositoryImpl: ItemRepositoryImpl
     ): ItemRepository
 
+    // Option 2 with annotation class
     @Binds
     @RepositoryBinds
     @Singleton
@@ -32,9 +33,8 @@ abstract class RepositoryModule {
     ): MenuRepository
 
     @Binds
-    @RepositoryBinds
     @Singleton
-    abstract fun provideStoreRepositoryInstance(
+    internal abstract fun provideStoreRepositoryInstance(
         storeRepositoryImpl: StoreRepositoryImpl
     ): StoreRepository
 }
