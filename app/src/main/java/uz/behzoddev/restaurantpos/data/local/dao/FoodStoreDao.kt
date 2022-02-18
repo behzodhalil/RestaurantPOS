@@ -15,7 +15,7 @@ interface FoodStoreDao {
     suspend fun saveFoodStore(foodStore: FoodStore): Long
     @Update(onConflict = OnConflictStrategy.REPLACE)
     suspend fun updateFoodStore(foodStore: FoodStore): Int
-    @Delete()
+    @Delete
     suspend fun deleteFoodStore(foodStore: FoodStore): Int
     @Query("SELECT * FROM food_store_table")
     fun fetchAllStores() : Flow<List<FoodStore>>
