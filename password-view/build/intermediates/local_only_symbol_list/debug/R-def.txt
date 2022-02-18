@@ -1,2 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+color dodger_blue
+color hot_pink
+color medium_slate_blue
+color royal_blue

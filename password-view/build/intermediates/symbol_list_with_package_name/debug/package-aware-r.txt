@@ -1,1 +1,5 @@
 uz.behzoddev.password_view
+color dodger_blue
+color hot_pink
+color medium_slate_blue
+color royal_blue

@@ -1,0 +1,4 @@
+int color dodger_blue 0x0
+int color hot_pink 0x0
+int color medium_slate_blue 0x0
+int color royal_blue 0x0
