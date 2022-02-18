@@ -1,21 +1,22 @@
 plugins {
-    id ("com.android.application")
-    id ("org.jetbrains.kotlin.android")
-    id ("kotlin-kapt")
-    id ("dagger.hilt.android.plugin")
-    id ("kotlin-parcelize")
-    id ("androidx.navigation.safeargs.kotlin")
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
+    id("kotlin-parcelize")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
 
-    compileSdk = 31
+    compileSdk = Configs.compileSdkVersion
+
     defaultConfig {
         applicationId = Configs.applicationIdName
         minSdk = Configs.minSdkVersion
-        targetSdk  = Configs.targetSdkVersion
+        targetSdk = Configs.targetSdkVersion
         versionCode = Configs.versionCodeVersion
-        versionName  = Configs.versionName
+        versionName = Configs.versionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -33,8 +34,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility  = JavaVersion.VERSION_1_8
-        targetCompatibility  = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = ("1.8")
