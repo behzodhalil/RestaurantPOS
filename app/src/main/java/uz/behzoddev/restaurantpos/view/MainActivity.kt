@@ -3,11 +3,13 @@ package uz.behzoddev.restaurantpos.view
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
+import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 import uz.behzoddev.restaurantpos.R
 import uz.behzoddev.restaurantpos.common.extensions.debug
 import uz.behzoddev.restaurantpos.databinding.ActivityMainBinding
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
