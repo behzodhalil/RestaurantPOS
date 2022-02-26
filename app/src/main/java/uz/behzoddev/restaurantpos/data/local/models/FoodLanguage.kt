@@ -1,6 +1,6 @@
 package uz.behzoddev.restaurantpos.data.local.models
 
 data class FoodLanguage(
-    val languageName: String,
-    val languageIcon: Int
+    var languageName: String,
+    var languageIcon: Int
 )
