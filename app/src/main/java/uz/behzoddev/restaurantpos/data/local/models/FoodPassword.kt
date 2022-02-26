@@ -4,6 +4,6 @@ import androidx.room.Entity
 
 @Entity(tableName = "food_password_table")
 data class FoodPassword(
-    val foodPasswordId: Long = 0,
-    val foodPassword : Int
+    var foodPasswordId: Long = 0,
+    var foodPassword : Int
 )
