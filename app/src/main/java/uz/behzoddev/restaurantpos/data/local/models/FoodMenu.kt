@@ -11,5 +11,5 @@ data class FoodMenu(
     @PrimaryKey(autoGenerate = true)
     val foodMenuId: Int,
     @ColumnInfo(name = RoomContract.FoodMenuContract.FOOD_MENU_NAME)
-    var foodMenuName: String
+    val foodMenuName: String
 )
