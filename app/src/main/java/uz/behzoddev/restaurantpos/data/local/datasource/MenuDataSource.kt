@@ -8,4 +8,5 @@ interface MenuDataSource {
     suspend fun updateMenu(foodMenu: FoodMenu): Int
     suspend fun deleteMenu(foodMenu: FoodMenu): Int
     fun fetchAllMenus(): Flow<List<FoodMenu>>
+    fun fetchMenuById(foodMenuId: Int): Flow<FoodMenu>
 }

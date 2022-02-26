@@ -23,4 +23,8 @@ class MenuDataSourceImpl @Inject constructor(
     override fun fetchAllMenus(): Flow<List<FoodMenu>> {
         return menuDao.fetchAllMenus()
     }
+
+    override fun fetchMenuById(foodMenuId: Int): Flow<FoodMenu> {
+        return menuDao.fetchMenuById(foodMenuId)
+    }
 }
