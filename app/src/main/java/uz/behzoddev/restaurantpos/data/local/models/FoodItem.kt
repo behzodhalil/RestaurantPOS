@@ -11,17 +11,17 @@ import uz.behzoddev.restaurantpos.common.local.RoomContract
 @Entity(tableName = RoomContract.FoodItemContract.FOOD_ITEM_TABLE)
 data class FoodItem(
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_NAME)
-    val foodItemName : String,
+    var foodItemName : String,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_PRICE)
-    val foodItemPrice : Long,
+    var foodItemPrice : Long,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_SUB_COUNT)
-    val foodItemSubCount : Int,
+    var foodItemSubCount : Int,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_TOTAL_COUNT)
-    val foodItemTotalCount : Int,
+    var foodItemTotalCount : Int,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_CATEGORY)
-    val foodItemCategory : String,
+    var foodItemCategory : String,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_PHOTO)
-    val foodItemPhoto : String,
+    var foodItemPhoto : String,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_PAID)
     var foodItemIsPaid: Boolean = false,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_ID)
