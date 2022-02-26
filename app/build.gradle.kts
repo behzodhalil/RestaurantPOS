@@ -58,5 +58,5 @@ dependencies {
     ktx()
     timber()
     logger()
-    scalable1()
+    ini4j()
 }
