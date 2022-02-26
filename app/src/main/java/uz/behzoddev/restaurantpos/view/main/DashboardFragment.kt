@@ -5,9 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Spinner
+import dagger.hilt.android.AndroidEntryPoint
 import uz.behzoddev.restaurantpos.common.base.BaseFragment
 import uz.behzoddev.restaurantpos.databinding.FragmentDashboardBinding
 
+@AndroidEntryPoint
 class DashboardFragment : BaseFragment<FragmentDashboardBinding>() {
 
     private lateinit var languageSpinner: Spinner
