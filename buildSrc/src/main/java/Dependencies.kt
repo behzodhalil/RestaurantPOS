@@ -55,4 +55,7 @@ object Dependencies {
     // Timber & Logger
     const val timber = "com.jakewharton.timber:timber:${Versions.timberVersion}"
     const val logger = "com.orhanobut:logger:${Versions.loggerVersion}"
+
+    // Ini4j
+    const val ini4j = "implementation 'org.ini4j:ini4j:${Versions.ini4jVersion}"
 }
