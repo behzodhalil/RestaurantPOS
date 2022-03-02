@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="uz.behzoddev.restaurantpos">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:name=".di.RestaurantApplication"
         android:allowBackup="true"
@@ -10,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RestaurantPOS">
+        <activity android:name=".view.payment.PaymentActivity"/>
         <activity
             android:name=".view.MainActivity"
             android:exported="true">
