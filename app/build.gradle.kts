@@ -17,8 +17,7 @@ android {
         targetSdk = Configs.targetSdkVersion
         versionCode = Configs.versionCodeVersion
         versionName = Configs.versionName
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = Configs.testInstrumentationRunnerName
     }
     buildFeatures {
         viewBinding = true
