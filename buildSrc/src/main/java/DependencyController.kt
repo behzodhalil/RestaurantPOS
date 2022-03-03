@@ -91,11 +91,6 @@ fun DependencyHandler.logger() {
     implementation(Dependencies.logger)
 }
 
-// Implementation function of Ini4j
-fun DependencyHandler.ini4j() {
-    implementation(Dependencies.ini4j)
-}
-
 private fun DependencyHandler.implementation(depName: String) {
     add("implementation",depName)
 }
