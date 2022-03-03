@@ -1,7 +1,7 @@
 package uz.behzoddev.restaurantpos.di.modules
 
-import dagger.Binds
 import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import uz.behzoddev.restaurantpos.common.coroutines.DispatcherProviders
@@ -10,10 +10,12 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-abstract class CoroutineModule {
+object CoroutineModule {
 
-    @Binds
+    @Provides
     @Singleton
-    abstract fun provideDispatcher(dispatcherProvidersImpl: DispatcherProvidersImpl): DispatcherProviders
+    fun provideDispatcher(): DispatcherProviders {
+        return DispatcherProvidersImpl()
+    }
 
 }
