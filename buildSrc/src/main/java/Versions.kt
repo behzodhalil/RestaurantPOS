@@ -20,6 +20,5 @@ object Versions {
     const val ktxActivityVersion = "1.4.0"
     const val timberVersion = "5.0.1"
     const val loggerVersion = "2.2.0"
-    const val ini4jVersion = "0.5.4"
     const val appProviderVersion = "1.4.0"
 }
