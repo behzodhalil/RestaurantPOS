@@ -36,7 +36,11 @@
         android:id="@+id/menuManagementFragment"
         android:name="uz.behzoddev.restaurantpos.view.menu_management.MenuManagementFragment"
         android:label="fragment_menu_management"
-        tools:layout="@layout/fragment_menu_management" />
+        tools:layout="@layout/fragment_menu_management" >
+        <action
+            android:id="@+id/actionMenuManagementFragmentToAddMenuCategoryFragment"
+            app:destination="@id/addMenuCategoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/optionSettingsFragment"
         android:name="uz.behzoddev.restaurantpos.view.option_settings.OptionSettingsFragment"
@@ -52,4 +56,13 @@
         android:name="uz.behzoddev.restaurantpos.view.order_take_out.OrderTakeOutFragment"
         android:label="fragment_order_take_out"
         tools:layout="@layout/fragment_order_take_out" />
+    <fragment
+        android:id="@+id/addMenuCategoryFragment"
+        android:name="uz.behzoddev.restaurantpos.view.add_menu.AddMenuCategoryFragment"
+        android:label="fragment_add_menu_category"
+        tools:layout="@layout/fragment_add_menu_category" >
+        <action
+            android:id="@+id/actionAddMenuCategoryFragmentToMenuManagementFragment"
+            app:destination="@id/menuManagementFragment" />
+    </fragment>
 </navigation>
