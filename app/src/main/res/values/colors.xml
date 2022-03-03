@@ -11,4 +11,8 @@
     <color name="medium_slate_blue">#7B68EE</color>
     <color name="royal_blue">#4169E1</color>
     <color name="hot_pink">#FF69B4</color>
+    <color name="milk">#F7F7FB</color>
+    <color name="matterhorn">#505050</color>
+    <color name="midnight_express">#00003f</color>
+    <color name="black_russian">#000026</color>
 </resources>
