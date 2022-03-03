@@ -17,6 +17,7 @@ object RoomContract {
         const val FOOD_MENU_TABLE = "food_menu_table"
         const val FOOD_MENU_ID = "food_menu_id"
         const val FOOD_MENU_NAME = "food_menu_name"
+        const val FOOD_MENU_DESC_NAME = "food_menu_desc"
     }
     object FoodStoreContract {
         const val FOOD_STORE_TABLE = "food_store_table"
