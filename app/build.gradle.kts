@@ -42,6 +42,7 @@ android {
 }
 
 dependencies {
+    implementation("androidx.test:core-ktx:1.4.0")
     core()
     appCompat()
     materialDesign()
@@ -57,5 +58,4 @@ dependencies {
     ktx()
     timber()
     logger()
-    ini4j()
 }
