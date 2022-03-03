@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_menu_add_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_menu_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/medium_milk"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:hint="@string/text_menu_add_title"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_10dp"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_10dp"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_10dp"
+            app:boxCornerRadiusTopStart="@dimen/dimen_10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_menu_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/medium_milk"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_menu_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/medium_milk"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:hint="@string/text_menu_add_category"
+            app:boxCornerRadiusBottomEnd="@dimen/dimen_10dp"
+            app:boxCornerRadiusBottomStart="@dimen/dimen_10dp"
+            app:boxCornerRadiusTopEnd="@dimen/dimen_10dp"
+            app:boxCornerRadiusTopStart="@dimen/dimen_10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_menu_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/medium_milk"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,54 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".view.menu_management.MenuManagementFragment"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.menu_management.MenuManagementFragment">
 
-    <TextView
-        android:id="@+id/tv_menu_management_all"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="@dimen/dimen_50dp"
-        android:layout_marginTop="@dimen/dimen_20dp"
-        android:text="@string/text_menu_management_all"
-        android:textSize="@dimen/font_size_50sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/menu_management_logo"
+        android:layout_width="120dp"
+        android:layout_height="@dimen/dimen_120dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-23dp"
+        android:contentDescription="@string/text_mooing_logo"
+        android:src="@drawable/logo_mooing"
         tools:viewBindingIgnore="true"
         />
 
-    <include
-        android:id="@+id/lt_food_settings"
-        layout="@layout/layout_food_settings_item"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/tv_menu_management_all"
-        android:layout_marginTop="@dimen/dimen_70dp"
-        />
-
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_food_settings_add"
-        android:layout_width="@dimen/dimen_400dp"
-        android:layout_height="@dimen/dimen_100dp"
-        android:layout_alignTop="@id/lt_food_settings"
-        android:text="@string/text_menu_management_add"
-        android:textSize="@dimen/font_size_40sp"
-        android:textStyle="bold"
-        android:layout_marginStart="@dimen/dimen_371dp"
-        android:layout_marginTop="@dimen/dimen_1213dp"
-        android:backgroundTint="@color/purple_200" />
-
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="@dimen/dimen_400dp"
-        android:layout_height="@dimen/dimen_100dp"
-        android:layout_alignTop="@id/btn_food_settings_add"
-        android:layout_marginStart="@dimen/dimen_371dp"
-        android:layout_marginTop="@dimen/dimen_130dp"
+        android:id="@+id/btn_delete"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dimen_5dp"
         android:text="@string/text_menu_management_delete"
+        android:textSize="18sp"
         android:textStyle="bold"
-        android:textSize="@dimen/font_size_40sp"
-        android:backgroundTint="@color/purple_200"
         />
-</RelativeLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_update"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_delete"
+        android:layout_marginStart="10dp"
+        android:text="@string/text_menu_management_update"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_insert"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_update"
+        android:layout_marginStart="10dp"
+        android:text="@string/text_menu_management_insert"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
