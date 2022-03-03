@@ -2,7 +2,7 @@
     <string name="app_name">RestaurantPOS</string>
 
     <!-- Dashboard Texts -->
-    <string name="text_order_store">매장</string>
+    <string name="text_order_store">매장 식사</string>
     <string name="text_order_take_out">포장</string>
     <string name="text_store_logo">매장 로고</string>
     <string name="text_mooing_logo">무잉 로고</string>
