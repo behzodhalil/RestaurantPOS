@@ -13,6 +13,12 @@
         <action
             android:id="@+id/actionMainFragmentToMenuSettingsFragment"
             app:destination="@id/menuSettingsFragment" />
+        <action
+            android:id="@+id/actionMainFragmentToOrderStoreFragment"
+            app:destination="@id/orderStoreFragment" />
+        <action
+            android:id="@+id/actionMainFragmentToOrderTakeOutFragment"
+            app:destination="@id/orderTakeOutFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuSettingsFragment"
@@ -36,4 +42,14 @@
         android:name="uz.behzoddev.restaurantpos.view.option_settings.OptionSettingsFragment"
         android:label="fragment_option_settings"
         tools:layout="@layout/fragment_option_settings" />
+    <fragment
+        android:id="@+id/orderStoreFragment"
+        android:name="uz.behzoddev.restaurantpos.view.order_store.OrderStoreFragment"
+        android:label="fragment_order_store"
+        tools:layout="@layout/fragment_order_store" />
+    <fragment
+        android:id="@+id/orderTakeOutFragment"
+        android:name="uz.behzoddev.restaurantpos.view.order_take_out.OrderTakeOutFragment"
+        android:label="fragment_order_take_out"
+        tools:layout="@layout/fragment_order_take_out" />
 </navigation>
