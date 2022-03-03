@@ -3,6 +3,7 @@ object Dependencies {
     // Gradle
     const val gradleHilt = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hiltVersion}"
     const val gradleNavigation = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.navigationVersion}"
+
     // Core
     const val core = "androidx.core:core-ktx:${Versions.coreVersion}"
 
@@ -19,6 +20,7 @@ object Dependencies {
     const val jUnit = "junit:junit:${Versions.jUnitVersion}"
     const val jUnitTest = "androidx.test.ext:junit:${Versions.jUnitTestVersion}"
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.espressoVersion}"
+    const val appProvider = "androidx.test:core-ktx:${Versions.appProviderVersion}"
 
     // Jetpack Navigation
     const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigationVersion}"
@@ -56,6 +58,4 @@ object Dependencies {
     const val timber = "com.jakewharton.timber:timber:${Versions.timberVersion}"
     const val logger = "com.orhanobut:logger:${Versions.loggerVersion}"
 
-    // Ini4j
-    const val ini4j = "implementation 'org.ini4j:ini4j:${Versions.ini4jVersion}"
 }
