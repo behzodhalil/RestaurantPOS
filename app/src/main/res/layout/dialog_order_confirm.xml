@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="450dp"
+    android:layout_height="350dp"
+    android:backgroundTint="@color/water"
+    android:elevation="0dp"
+    app:cardCornerRadius="@dimen/dimen_20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/text_dialog_notice"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_30sp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <TextView
+            android:id="@+id/tv_notice_desc_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_notice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/text_notice_description_1"
+            android:textSize="@dimen/font_size_25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_notice_desc_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_notice_description_2"
+            android:textSize="@dimen/font_size_25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            app:layout_constraintStart_toStartOf="@id/tv_notice_desc_1"
+            app:layout_constraintEnd_toEndOf="@id/tv_notice_desc_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_notice_desc_1"
+            tools:viewBindingIgnore="true"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tv_notice_confirm"
+            android:layout_width="@dimen/dimen_140dp"
+            android:layout_height="65dp"
+            app:cornerRadius="@dimen/dimen_20dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/text_notice_button"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            app:layout_constraintStart_toStartOf="@id/tv_notice_desc_2"
+            app:layout_constraintEnd_toEndOf="@id/tv_notice_desc_2"
+            app:layout_constraintTop_toBottomOf="@id/tv_notice_desc_2"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
