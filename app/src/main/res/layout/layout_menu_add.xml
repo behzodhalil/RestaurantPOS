@@ -14,8 +14,8 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_menu_title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/medium_milk"
+            android:layout_height="@dimen/dimen_100dp"
+            android:backgroundTint="@color/white"
             android:layout_margin="@dimen/dimen_16dp"
             android:hint="@string/text_menu_add_title"
             app:boxCornerRadiusBottomEnd="@dimen/dimen_10dp"
@@ -27,17 +27,18 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tie_menu_title"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/medium_milk"
+                android:layout_height="@dimen/dimen_100dp"
+                android:background="@color/white"
                 android:inputType="text"
+                android:textSize="@dimen/font_size_30sp"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_menu_category"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/medium_milk"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/white"
             android:layout_margin="@dimen/dimen_16dp"
             android:hint="@string/text_menu_add_category"
             app:boxCornerRadiusBottomEnd="@dimen/dimen_10dp"
@@ -49,9 +50,10 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tie_menu_category"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/medium_milk"
+                android:layout_height="@dimen/dimen_100dp"
+                android:background="@color/white"
                 android:inputType="text"
+                android:textSize="@dimen/font_size_30sp"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
