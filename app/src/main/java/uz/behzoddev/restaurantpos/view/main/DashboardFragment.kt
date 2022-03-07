@@ -49,7 +49,7 @@ class DashboardFragment : BaseFragment<FragmentDashboardBinding>() {
 
     private fun onNavigateToTakeOut() = with(binding) {
         btnOrderTakeOut.setOnClickListener {
-            findNavController().navigate(R.id.actionMainFragmentToOrderTakeOutFragment)
+            findNavController().navigate(R.id.orderConfirmDialog)
         }
     }
 }
