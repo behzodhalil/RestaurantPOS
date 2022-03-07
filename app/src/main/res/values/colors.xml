@@ -18,4 +18,12 @@
     <color name="medium_milk">#CBCCC6</color>
     <color name="bubbles">#e9fbff</color>
     <color name="clear_aqua">#cedee1</color>
+    <color name="water">#CAE9F5</color>
+    <color name="alice_blue">#F0F8FF</color>
+    <color name="dark_sky_blue">#86C5D8</color>
+    <color name="thistle">#E0BBE4</color>
+    <color name="lavender_purple">#957DAD</color>
+    <color name="cotton_candy">#FEC8D8</color>
+    <color name="lumber"> #FFDFD3</color>
+    <color name="cornflower_blue">#7493E9</color>
 </resources>
