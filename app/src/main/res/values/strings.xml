@@ -97,6 +97,10 @@
     <string name="text_menu_add">메뉴 추가</string>
     <string name="text_menu_update">메뉴 수정</string>
     <string name="text_menu_add_title">메뉴명</string>
+    <string name="text_dialog_notice">알림</string>
+    <string name="text_notice_description_1">선택된 메뉴가 없습니다</string>
+    <string name="text_notice_description_2">메뉴선택 후 다시 시도해주세요</string>
+    <string name="text_notice_button">확인</string>
 
 
 </resources>
