@@ -19,6 +19,9 @@
         <action
             android:id="@+id/actionMainFragmentToOrderTakeOutFragment"
             app:destination="@id/orderTakeOutFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_orderConfirmDialog"
+            app:destination="@id/orderConfirmDialog" />
     </fragment>
     <fragment
         android:id="@+id/menuSettingsFragment"
@@ -65,4 +68,10 @@
             android:id="@+id/actionAddMenuCategoryFragmentToMenuManagementFragment"
             app:destination="@id/menuManagementFragment" />
     </fragment>
+
+    <dialog
+        android:id="@+id/orderConfirmDialog"
+        android:name="uz.behzoddev.restaurantpos.view.dialogs.OrderConfirmDialog"
+        android:label="OrderConfirmDialog" >
+    </dialog>
 </navigation>
