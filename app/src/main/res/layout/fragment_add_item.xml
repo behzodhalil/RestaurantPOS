@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context = ".view.add_menu.AddMenuCategoryFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.add_menu.AddMenuCategoryFragment">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="@dimen/dimen_300dp"
+        android:layout_height="@dimen/dimen_300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-50dp"
+        android:contentDescription="@string/text_mooing_logo"
+        android:src="@drawable/logo_mooing" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_250dp"
+        android:layout_marginStart="@dimen/dimen_40dp"
+        android:layout_marginEnd="@dimen/dimen_40dp"
+        android:background="@drawable/bg_menu_add_layout"
+        >
+
+        <include
+            android:id="@+id/layout_menu_add_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_add_item"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            android:layout_width="@dimen/dimen_300dp"
+            android:layout_height="@dimen/dimen_120dp"
+            android:layout_marginStart="@dimen/dimen_350dp"
+            android:layout_marginTop="@dimen/dimen_100dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/text_menu_add"
+            android:textColor="@color/teal_700"
+            android:layout_marginBottom="@dimen/dimen_40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_menu_add_item"
+            app:cornerRadius="@dimen/dimen_20dp"
+            android:textSize="@dimen/font_size_40sp"
+            android:textStyle="bold" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
