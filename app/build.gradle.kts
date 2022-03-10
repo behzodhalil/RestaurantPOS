@@ -58,4 +58,5 @@ dependencies {
     ktx()
     timber()
     logger()
+    powerSpinner()
 }
