@@ -23,6 +23,7 @@ class MenuManagementFragment : BaseFragment<FragmentMenuManagementBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         onNavigateToAddMenu()
+        binding.emptyLayout.visibility = View.VISIBLE
     }
 
     private fun onNavigateToAddMenu() = with(binding) {
