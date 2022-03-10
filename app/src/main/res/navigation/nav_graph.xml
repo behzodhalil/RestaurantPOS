@@ -63,11 +63,12 @@
         android:id="@+id/addMenuCategoryFragment"
         android:name="uz.behzoddev.restaurantpos.view.add_menu.AddMenuCategoryFragment"
         android:label="fragment_add_menu_category"
-        tools:layout="@layout/fragment_add_menu_category" >
+        tools:layout="@layout/fragment_add_item" >
         <action
             android:id="@+id/actionAddMenuCategoryFragmentToMenuManagementFragment"
             app:destination="@id/menuManagementFragment" />
     </fragment>
+
 
     <dialog
         android:id="@+id/orderConfirmDialog"
