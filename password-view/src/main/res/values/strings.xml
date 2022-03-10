@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="library_name">Password View</string>
+    <string name="please_enter_password">4~6자리의 비밀번호를 입력하세요</string>
+    <string name="re_enter_password">새 비밀번호 다시 입력하세요</string>
+    <string name="password_not_match">비밀번호가 일치하지 않습니다.</string>
+</resources>
