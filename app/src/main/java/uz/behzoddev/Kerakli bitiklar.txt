@@ -29,6 +29,14 @@ https://github.com/spotify/ruler
 https://github.com/ashutoshgngwr/noice
 https://github.com/egorikftp/Lady-happy-Android
 
+https://github.com/hanks-zyh/ActivityResultManager
+https://stackoverflow.com/questions/37873380/how-to-reduce-image-size-into-1mb
+https://medium.com/@uttam.cooch/save-images-in-room-persistence-library-c71b60865b7e
+https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiruZObiLv2AhVVr1YBHQUPDKgQwqsBegQIBBAB&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D4dmwXQscGCw&usg=AOvVaw2I0suhU1a-DIqI6Jqo2RVP
+
+
 ViewPager
+
+
 
 
