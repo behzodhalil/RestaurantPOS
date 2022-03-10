@@ -11,6 +11,7 @@ import androidx.annotation.Nullable
 import kotlin.math.min
 
 // https://github.com/hanks-zyh/PasscodeView/blob/master/passcodeview/src/main/res/layout/layout_passcode_view.xml
+
 internal class CircleView : View {
     private var mPaint: Paint? = null
     private var color = Color.BLACK
