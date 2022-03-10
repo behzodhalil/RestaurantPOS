@@ -21,4 +21,5 @@ object Versions {
     const val timberVersion = "5.0.1"
     const val loggerVersion = "2.2.0"
     const val appProviderVersion = "1.4.0"
+    const val powerSpinner = "1.1.9"
 }
