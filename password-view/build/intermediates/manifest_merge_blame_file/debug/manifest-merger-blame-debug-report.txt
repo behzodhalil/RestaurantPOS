@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="21"
-6-->/home/behzod/AndroidStudioProjects/RestaurantPOS/password-view/src/main/AndroidManifest.xml
+6-->/home/behzod/AndroidStudioProjects/RestaurantPOS2/password-view/src/main/AndroidManifest.xml
 7        android:targetSdkVersion="31" />
-7-->/home/behzod/AndroidStudioProjects/RestaurantPOS/password-view/src/main/AndroidManifest.xml
+7-->/home/behzod/AndroidStudioProjects/RestaurantPOS2/password-view/src/main/AndroidManifest.xml
 8
 9</manifest>
