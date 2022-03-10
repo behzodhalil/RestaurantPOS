@@ -21,6 +21,14 @@ https://github.com/alvayonara/MealsFood
 https://github.com/Vaibhav2002/Foodles
 https://github.com/Aleixo-Dev/RecipeMeals
 https://github.com/tirgei/Automart
+https://github.com/guilherme-v/clean-arch-android
+https://github.com/Kingbond470/MFine
+https://github.com/Kingbond470/Sarang
+https://github.com/Kingbond470/Anime-Engine
+https://github.com/spotify/ruler
+https://github.com/ashutoshgngwr/noice
+https://github.com/egorikftp/Lady-happy-Android
 
+ViewPager
 
 
