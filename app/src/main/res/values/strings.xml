@@ -114,6 +114,8 @@
     <string name="text_notice_description_1">선택된 메뉴가 없습니다</string>
     <string name="text_notice_description_2">메뉴선택 후 다시 시도해주세요</string>
     <string name="text_notice_button">확인</string>
+    <string name="text_empty_image">Empty image</string>
+    <string name="text_empty">아직 메뉴가 없습니다.</string>
 
 
 </resources>
