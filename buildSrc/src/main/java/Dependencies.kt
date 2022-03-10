@@ -58,4 +58,7 @@ object Dependencies {
     const val timber = "com.jakewharton.timber:timber:${Versions.timberVersion}"
     const val logger = "com.orhanobut:logger:${Versions.loggerVersion}"
 
+    // Power Spinner
+    const val powerSpinner = "com.github.skydoves:powerspinner:${Versions.powerSpinner}"
+
 }
