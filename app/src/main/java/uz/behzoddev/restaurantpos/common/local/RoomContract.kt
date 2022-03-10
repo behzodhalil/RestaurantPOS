@@ -1,5 +1,7 @@
 package uz.behzoddev.restaurantpos.common.local
 
+// https://www.raywenderlich.com/23623842-object-in-kotlin-and-the-singleton-pattern
+// https://www.raywenderlich.com/18409174-common-design-patterns-and-app-architectures-for-android
 object RoomContract {
     const val DATABASE_NAME = "restaurant_database"
     object FoodItemContract {
