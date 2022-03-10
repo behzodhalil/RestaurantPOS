@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_border_table">
+
+    <TableLayout
+        android:id="@+id/tl_heading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_menu_item_number"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_column="0"
+                android:layout_margin="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_40sp"
+                android:textStyle="bold"
+                tools:text="@string/text_menu_number" />
+
+            <TextView
+                android:id="@+id/tv_menu_item_name"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_column="0"
+                android:layout_margin="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_40sp"
+                android:textStyle="bold"
+                tools:text="@string/text_menu_title" />
+
+            <TextView
+                android:id="@+id/tv_menu_item_price"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_column="0"
+                android:layout_margin="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_40sp"
+                android:textStyle="bold"
+                tools:text="@string/text_menu_price" />
+
+            <TextView
+                android:id="@+id/tv_menu_item_quantity"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_column="0"
+                android:layout_margin="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_40sp"
+                android:textStyle="bold"
+                tools:text="@string/text_menu_quantity" />
+
+            <TextView
+                android:id="@+id/tv_menu_item_category"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_column="0"
+                android:layout_margin="1dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_40sp"
+                android:textStyle="bold"
+                tools:text="@string/text_menu_category" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
