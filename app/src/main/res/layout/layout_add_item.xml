@@ -9,6 +9,7 @@
     >
 
     <ImageView
+        android:id="@+id/insert_photo"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_250dp"
         android:layout_marginStart="@dimen/dimen_40dp"
@@ -102,6 +103,7 @@
         android:hint="@string/text_menu_add_item_category"
         >
         <AutoCompleteTextView
+            android:id="@+id/act_category"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_100dp"
             android:inputType="none"

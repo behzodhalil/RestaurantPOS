@@ -7,6 +7,7 @@
     tools:context=".view.add_menu.AddMenuCategoryFragment">
 
     <ImageView
+        android:id="@+id/insert_photo"
         android:layout_width="@dimen/dimen_300dp"
         android:layout_height="@dimen/dimen_300dp"
         android:layout_alignParentStart="true"
