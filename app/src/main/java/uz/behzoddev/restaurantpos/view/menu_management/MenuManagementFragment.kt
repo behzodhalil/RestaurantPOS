@@ -13,6 +13,7 @@ import uz.behzoddev.restaurantpos.R
 import uz.behzoddev.restaurantpos.common.base.BaseFragment
 import uz.behzoddev.restaurantpos.common.extensions.hide
 import uz.behzoddev.restaurantpos.common.extensions.show
+import uz.behzoddev.restaurantpos.common.extensions.showToastShort
 import uz.behzoddev.restaurantpos.common.states.ItemState
 import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 import uz.behzoddev.restaurantpos.databinding.FragmentMenuManagementBinding
@@ -34,6 +35,7 @@ class MenuManagementFragment : BaseFragment<FragmentMenuManagementBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
+        deleteItem()
         observerMenuManagement()
         onNavigateToAddMenu()
     }
@@ -44,6 +46,14 @@ class MenuManagementFragment : BaseFragment<FragmentMenuManagementBinding>() {
         menuManagementRV.adapter = menuManagementAdapter
     }
 
+    private fun deleteItem() = with(binding) {
+        menuManagementAdapter.setOnClickListener {
+            showToastShort("Clicked item")
+            btnDelete.setOnClickListener {
+
+            }
+        }
+    }
     private fun observerMenuManagement() = lifecycleScope.launchWhenStarted {
         menuManagementViewModel.itemState.collect { result ->
             when(result) {
@@ -74,7 +84,6 @@ class MenuManagementFragment : BaseFragment<FragmentMenuManagementBinding>() {
     private fun hideItems() = with(binding) {
         layoutMenuManagement.recyclerViewMenuManagement.hide()
         emptyLayout.show()
-
     }
     private fun onNavigateToAddMenu() = with(binding) {
         btnInsert.setOnClickListener {
