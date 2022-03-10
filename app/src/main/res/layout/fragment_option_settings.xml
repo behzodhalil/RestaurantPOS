@@ -3,65 +3,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".view.option_settings.OptionSettingsFragment"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.option_settings.OptionSettingsFragment">
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="@dimen/dimen_100dp"
+        android:layout_width="@dimen/dimen_400dp"
+        android:layout_height="@dimen/dimen_400dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="@dimen/dimen_20dp"
-        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-50dp"
         android:contentDescription="@string/text_mooing_logo"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@drawable/logo_mooing" />
 
     <ImageView
         android:layout_width="@dimen/dimen_450dp"
-        android:layout_height="@dimen/dimen_250dp"
+        android:layout_height="@dimen/dimen_450dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="@dimen/dimen_150dp"
-        android:layout_marginTop="@dimen/dimen_200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dimen_325dp"
+        android:layout_marginTop="@dimen/dimen_425dp"
         android:contentDescription="@string/text_store_logo"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@drawable/logo_starbucks" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_option_settings_env"
-        android:layout_width="@dimen/dimen_250dp"
-        android:layout_height="@dimen/dimen_200dp"
+        android:layout_width="@dimen/dimen_350dp"
+        android:layout_height="@dimen/dimen_350dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="@dimen/dimen_80dp"
         android:layout_marginBottom="@dimen/dimen_600dp"
-        android:backgroundTint="@color/purple_200"
+        android:backgroundTint="@color/cornflower_blue"
+        android:fontFamily="@font/noto_sans"
         android:text="@string/text_option_settings_env"
-        android:textSize="@dimen/font_size_40sp"
-        android:textStyle="bold" />
+        android:textSize="@dimen/font_size_50sp"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/dimen_40dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_option_settings_pin"
-        android:layout_width="@dimen/dimen_250dp"
-        android:layout_height="@dimen/dimen_200dp"
+        android:layout_width="@dimen/dimen_350dp"
+        android:layout_height="@dimen/dimen_350dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="@dimen/dimen_80dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dimen_120dp"
         android:layout_marginBottom="@dimen/dimen_600dp"
-        android:backgroundTint="@color/purple_200"
+        android:backgroundTint="@color/cornflower_blue"
+        android:fontFamily="@font/noto_sans"
         android:text="@string/text_option_settings_pin"
-        android:textSize="@dimen/font_size_40sp"
-        android:textStyle="bold" />
+        android:textSize="@dimen/font_size_50sp"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/dimen_40dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_option_settings_store"
-        android:layout_width="@dimen/dimen_250dp"
-        android:layout_height="@dimen/dimen_200dp"
+        android:layout_width="@dimen/dimen_350dp"
+        android:layout_height="@dimen/dimen_350dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="@dimen/dimen_200dp"
-        android:layout_marginBottom="@dimen/dimen_350dp"
-        android:backgroundTint="@color/purple_200"
+        android:layout_marginEnd="@dimen/dimen_325dp"
+        android:layout_marginBottom="@dimen/dimen_180dp"
+        android:backgroundTint="@color/cornflower_blue"
         android:text="@string/text_option_settings_store"
-        android:textSize="@dimen/font_size_40sp"
+        app:cornerRadius="@dimen/dimen_40dp"
+        android:textSize="@dimen/font_size_50sp"
         android:textStyle="bold" />
 </RelativeLayout>

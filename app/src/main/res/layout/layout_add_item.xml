@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_menu_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="@dimen/dimen_40dp"
+        android:layout_marginEnd="@dimen/dimen_40dp"
+        android:hint="@string/text_menu_add_title"
+        app:boxCornerRadiusBottomEnd="@dimen/dimen_10dp"
+        app:boxCornerRadiusBottomStart="@dimen/dimen_10dp"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_10dp"
+        app:boxCornerRadiusTopStart="@dimen/dimen_10dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_menu_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100dp"
+            android:background="@color/white"
+            android:inputType="text"
+            android:textSize="@dimen/font_size_30sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_menu_price"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:layout_marginStart="@dimen/dimen_40dp"
+        android:layout_marginEnd="@dimen/dimen_40dp"
+        android:hint="@string/text_menu_add_category"
+        app:boxCornerRadiusBottomEnd="@dimen/dimen_10dp"
+        app:boxCornerRadiusBottomStart="@dimen/dimen_10dp"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_10dp"
+        app:boxCornerRadiusTopStart="@dimen/dimen_10dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_menu_category"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100dp"
+            android:background="@color/white"
+            android:inputType="text"
+            android:textSize="@dimen/font_size_30sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

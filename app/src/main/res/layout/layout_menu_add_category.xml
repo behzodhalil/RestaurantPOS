@@ -56,7 +56,6 @@
                 android:textSize="@dimen/font_size_30sp"
                 />
         </com.google.android.material.textfield.TextInputLayout>
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
