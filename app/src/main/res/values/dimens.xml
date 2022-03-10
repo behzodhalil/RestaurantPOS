@@ -91,6 +91,7 @@
     <dimen name="dimen_450dp">450dp</dimen>
     <dimen name="dimen_500dp">500dp</dimen>
     <dimen name="dimen_600dp">600dp</dimen>
+    <dimen name="dimen_650dp">650dp</dimen>
     <dimen name="dimen_700dp">700dp</dimen>
     <dimen name="dimen_800dp">800dp</dimen>
     <dimen name="dimen_1213dp">1213dp</dimen>
