@@ -1,0 +1,26 @@
+Calendar orqali topish uchun ushbu repositoriyani o'rganish:
+https://github.com/fakhrymubarak/LifeLog
+
+https://github.com/theankushrai/HostelManagement
+https://github.com/AdityaV025/Munche
+https://github.com/yunxiuqiu1115/restaurant-management-app
+
+
+Itemni button orqali o'chirish uchun misol:
+https://github.com/codeMoriarity/pedal-plates/blob/master/app/src/main/java/com/moriarity_code/pedalplates/adapter/FavouriteAdapter.kt
+
+
+https://github.com/vaidadry/foodMood
+
+PassCodeView library ni ishlatilgan misol:
+https://github.com/vaidadry/DemoBankApp
+
+
+https://github.com/vgs-samples/very-spacy-food-android
+https://github.com/alvayonara/MealsFood
+https://github.com/Vaibhav2002/Foodles
+https://github.com/Aleixo-Dev/RecipeMeals
+https://github.com/tirgei/Automart
+
+
+
