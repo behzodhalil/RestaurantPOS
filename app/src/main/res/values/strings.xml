@@ -41,6 +41,7 @@
     <!-- Menu Settings Texts -->
     <string name="text_menu_management">메뉴 관리</string>
     <string name="text_option_settings">옵션 설정</string>
+    <string name="text_app_exit">앱 종료</string>
 
     <!-- Food Settings Texts -->
     <string name="text_food_settings_name">이름</string>
@@ -55,6 +56,11 @@
     <string name="text_menu_management_update">수정하기</string>
     <string name="text_menu_management_insert">추가하기</string>
     <string name="text_menu_management_search">검색</string>
+    <string name="text_menu_number">번호</string>
+    <string name="text_menu_title">메뉴명</string>
+    <string name="text_menu_price">가격</string>
+    <string name="text_menu_quantity">수량</string>
+    <string name="text_menu_category">메뉴 종류</string>
 
     <!-- Option Settings Texts -->
     <string name="text_option_settings_env">환경 설정</string>
@@ -99,7 +105,8 @@
     <string name="text_menu_add_title">메뉴명</string>
     <string name="text_menu_add_item_price">가격</string>
     <string name="text_menu_add_item_quantity">수량</string>
-    <string name="text_menu_add_item_category">종류</string>
+    <string name="text_menu_add_item_category">메뉴 종류</string>
+    <string name="text_menu_add_item_photo">Insert Photo</string>
     <string name="text_menu_add_item_product_nutritional_information">제품 영양 정보</string>
     <string name="text_menu_add_item_serving_size">1회 제공량(kcal)</string>
     <string name="text_menu_add_item_sodium">나트륨(mg)</string>
