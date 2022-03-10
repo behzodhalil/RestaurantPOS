@@ -16,8 +16,6 @@ data class FoodItem(
     var foodItemPrice : Long,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_SUB_COUNT)
     var foodItemSubCount : Int,
-    @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_TOTAL_COUNT)
-    var foodItemTotalCount : Int,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_CATEGORY)
     var foodItemCategory : String,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_PHOTO)
