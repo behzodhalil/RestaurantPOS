@@ -3,28 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dimen_20dp"
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_menu_name"
+    >
+
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_100dp"
-        android:backgroundTint="@color/white"
+        android:layout_height="@dimen/dimen_250dp"
         android:layout_marginStart="@dimen/dimen_40dp"
         android:layout_marginEnd="@dimen/dimen_40dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:src="@drawable/ic_photo"
+        android:padding="@dimen/dimen_50dp"
+        android:contentDescription="@string/text_menu_add_item_photo"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_menu_name"
+        style="@style/PrimaryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"
+        android:backgroundTint="@color/milk"
         android:hint="@string/text_menu_add_title"
-        app:boxCornerRadiusBottomEnd="@dimen/dimen_10dp"
-        app:boxCornerRadiusBottomStart="@dimen/dimen_10dp"
-        app:boxCornerRadiusTopEnd="@dimen/dimen_10dp"
-        app:boxCornerRadiusTopStart="@dimen/dimen_10dp"
         >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_menu_name"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_100dp"
-            android:background="@color/white"
+            android:background="@color/milk"
             android:inputType="text"
+            android:fontFamily="@font/noto_sans"
             android:textSize="@dimen/font_size_30sp"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -32,12 +41,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_menu_price"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:backgroundTint="@color/white"
-        android:layout_marginTop="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_100dp"
+        android:backgroundTint="@color/milk"
+        android:layout_marginTop="@dimen/dimen_20dp"
         android:layout_marginStart="@dimen/dimen_40dp"
         android:layout_marginEnd="@dimen/dimen_40dp"
-        android:hint="@string/text_menu_add_category"
+        android:hint="@string/text_menu_add_item_price"
         app:boxCornerRadiusBottomEnd="@dimen/dimen_10dp"
         app:boxCornerRadiusBottomStart="@dimen/dimen_10dp"
         app:boxCornerRadiusTopEnd="@dimen/dimen_10dp"
@@ -45,13 +54,65 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tie_menu_category"
+            android:id="@+id/tie_menu_price"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_100dp"
-            android:background="@color/white"
+            android:background="@color/milk"
             android:inputType="text"
+            android:fontFamily="@font/noto_sans"
             android:textSize="@dimen/font_size_30sp"
             />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_menu_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"
+        android:backgroundTint="@color/milk"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginStart="@dimen/dimen_40dp"
+        android:layout_marginEnd="@dimen/dimen_40dp"
+        android:hint="@string/text_menu_add_item_quantity"
+        app:boxCornerRadiusBottomEnd="@dimen/dimen_10dp"
+        app:boxCornerRadiusBottomStart="@dimen/dimen_10dp"
+        app:boxCornerRadiusTopEnd="@dimen/dimen_10dp"
+        app:boxCornerRadiusTopStart="@dimen/dimen_10dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_menu_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100dp"
+            android:background="@color/milk"
+            android:inputType="text"
+            android:fontFamily="@font/noto_sans"
+            android:textSize="@dimen/font_size_30sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_menu_category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"
+        style="@style/DropDown"
+        android:layout_marginStart="@dimen/dimen_40dp"
+        android:layout_marginEnd="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:backgroundTint="@color/milk"
+        android:hint="@string/text_menu_add_item_category"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100dp"
+            android:inputType="none"
+            android:backgroundTint="@color/milk"
+            android:textSize="@dimen/font_size_30sp"
+            android:labelFor="@id/til_menu_category"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
 </LinearLayout>
