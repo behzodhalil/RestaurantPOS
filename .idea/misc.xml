@@ -37,8 +37,10 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/layout_add_item.xml" value="0.10243055555555555" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/layout_menu_add.xml" value="0.15" />
         <entry key="app/src/main/res/drawable/bg_border_table.xml" value="0.194" />
+        <entry key="app/src/main/res/drawable/bg_table_menu_management.xml" value="0.129" />
         <entry key="app/src/main/res/drawable/ic_back.xml" value="0.191" />
         <entry key="app/src/main/res/drawable/ic_bag_shopping_light.xml" value="0.1145" />
+        <entry key="app/src/main/res/drawable/ic_empty.xml" value="0.337" />
         <entry key="app/src/main/res/drawable/ic_exit.xml" value="0.213" />
         <entry key="app/src/main/res/drawable/ic_menu_settings.xml" value="0.213" />
         <entry key="app/src/main/res/drawable/ic_photo.xml" value="0.278" />
@@ -53,7 +55,7 @@
         <entry key="app/src/main/res/layout/fragment_enter_password_to_menu_settings.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_env_settings.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_menu_management.xml" value="0.13" />
+        <entry key="app/src/main/res/layout/fragment_menu_management.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_menu_setting.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_option_settings.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_option_setttings.xml" value="0.11875" />
@@ -73,12 +75,15 @@
         <entry key="app/src/main/res/layout/item_header_menu.xml" value="0.12" />
         <entry key="app/src/main/res/layout/item_header_row.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/item_menu.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_row_menu.xml" value="0.1" />
         <entry key="app/src/main/res/layout/layout_add_item.xml" value="0.18" />
         <entry key="app/src/main/res/layout/layout_autocomplete.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/layout_dropdown.xml" value="0.11875" />
+        <entry key="app/src/main/res/layout/layout_empty.xml" value="0.1" />
         <entry key="app/src/main/res/layout/layout_food_settings_item.xml" value="0.14" />
         <entry key="app/src/main/res/layout/layout_menu_add_category.xml" value="0.22" />
         <entry key="app/src/main/res/layout/layout_menu_items.xml" value="0.11875" />
+        <entry key="app/src/main/res/layout/layout_menu_management_items.xml" value="0.1" />
       </map>
     </option>
   </component>
