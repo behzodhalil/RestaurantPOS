@@ -91,6 +91,11 @@ fun DependencyHandler.logger() {
     implementation(Dependencies.logger)
 }
 
+// Power Spinner
+fun DependencyHandler.powerSpinner() {
+    implementation(Dependencies.powerSpinner)
+}
+
 private fun DependencyHandler.implementation(depName: String) {
     add("implementation",depName)
 }
