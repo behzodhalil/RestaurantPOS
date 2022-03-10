@@ -22,4 +22,7 @@ class OptionSettingsFragment : BaseFragment<FragmentOptionSettingsBinding>() {
         super.onViewCreated(view, savedInstanceState)
     }
 
+    private fun onNavigatePinSettings() {
+
+    }
 }
