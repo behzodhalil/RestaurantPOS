@@ -33,6 +33,14 @@ class MenuManagementAdapter : RecyclerView.Adapter<MenuManagementAdapter.MenuMan
     val differ = AsyncListDiffer(this, diffCallBack)
     // https://medium.com/simform-engineering/listadapter-a-recyclerview-adapter-extension-5359d13bd879
     // https://www.raywenderlich.com/21954410-speed-up-your-android-recyclerview-using-diffutil
+    // https://www.raywenderlich.com/1560485-android-recyclerview-tutorial-with-kotlin
+    // https://www.raywenderlich.com/272-intermediate-recyclerview-tutorial-with-kotlin
+    // https://www.raywenderlich.com/29024188-recyclerview-selection-library-tutorial-for-android-adding-new-actions
+    // https://github.com/h6ah4i/android-advancedrecyclerview
+    // https://developer.android.com/courses/pathways/android-development-with-kotlin-10
+    // https://medium.com/@farshidabazari/improve-recyclerview-performance-ede5cec6c5bf
+    // https://proandroiddev.com/recyclerview-pro-tips-part-1-8a291594bafc
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuManagementViewHolder {
        val binding = ItemRowMenuBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return MenuManagementViewHolder(binding)
@@ -53,6 +61,10 @@ class MenuManagementAdapter : RecyclerView.Adapter<MenuManagementAdapter.MenuMan
     }
 
     private var onItemClickListener : ((FoodItem) -> Unit)? = null
+
+    fun setOnClickListener(listener: (FoodItem) -> Unit) {
+        onItemClickListener = listener
+    }
 
     override fun getItemCount(): Int {
        return differ.currentList.size
