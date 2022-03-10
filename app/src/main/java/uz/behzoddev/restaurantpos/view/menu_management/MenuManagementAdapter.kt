@@ -1,5 +1,6 @@
 package uz.behzoddev.restaurantpos.view.menu_management
 
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
@@ -30,9 +31,11 @@ class MenuManagementAdapter : RecyclerView.Adapter<MenuManagementAdapter.MenuMan
     }
 
     val differ = AsyncListDiffer(this, diffCallBack)
-
+    // https://medium.com/simform-engineering/listadapter-a-recyclerview-adapter-extension-5359d13bd879
+    // https://www.raywenderlich.com/21954410-speed-up-your-android-recyclerview-using-diffutil
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuManagementViewHolder {
-        TODO("Not yet implemented")
+       val binding = ItemRowMenuBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        return MenuManagementViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: MenuManagementViewHolder, position: Int) {
