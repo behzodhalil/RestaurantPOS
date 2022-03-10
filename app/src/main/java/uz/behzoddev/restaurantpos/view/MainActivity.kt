@@ -51,3 +51,19 @@ class MainActivity : AppCompatActivity() {
         debug { "setupNavigation() method is created" }
     }
 }
+
+// https://androidwave.com/android-check-internet-connection/
+// https://androidwave.com/mastering-in-android-service/
+// https://androidwave.com/upload-files-to-server-using-service-in-android/
+// https://androidwave.com/passing-data-between-fragments/
+// https://androidwave.com/workmanager-constraints/
+// https://androidwave.com/pagination-in-recyclerview/
+// https://androidwave.com/android-recyclerview-example-best-practices/
+// https://iamnaran.medium.com/viewpager2-with-tablayout-android-310bc7360cb5
+// https://medium.com/1mgofficial/how-recyclerview-works-internally-71290de5d2c4
+// https://medium.com/android-news/keddit-part-4-recyclerview-delegate-adapters-data-classes-with-kotlin-9248f44327f7
+// https://medium.com/mindorks/diffutils-improving-performance-of-recyclerview-102b254a9e4a
+// https://info-anikdey003.medium.com/working-with-viewpager2-c4a43227486b
+// https://hanru-yeh.medium.com/fix-viewpager2-s-memory-leak-by-lifecycle-aware-component-786d3a3f97c2
+// https://hardik-bambhania.medium.com/kotlin-flow-basic-b80cf491f16
+// https://medium.com/mindorks/mastering-design-patterns-in-android-with-kotlin-a6d83b24c363
