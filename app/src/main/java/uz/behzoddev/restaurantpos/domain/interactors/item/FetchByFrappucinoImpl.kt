@@ -1,4 +1,15 @@
 package uz.behzoddev.restaurantpos.domain.interactors.item
 
-class FetchByFrappucinoImpl {
+import kotlinx.coroutines.flow.Flow
+import uz.behzoddev.restaurantpos.data.local.models.FoodItem
+import uz.behzoddev.restaurantpos.domain.repositories.ItemRepository
+import javax.inject.Inject
+
+class FetchByFrappucinoImpl @Inject constructor(
+    private val itemRepository: ItemRepository
+)  : FetchByFrappucino {
+
+    override fun invoke(): Flow<List<FoodItem>> {
+        return itemRepository.fetchByFrappucino()
+    }
 }
