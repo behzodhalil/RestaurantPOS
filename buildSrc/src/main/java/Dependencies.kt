@@ -61,4 +61,6 @@ object Dependencies {
     // Power Spinner
     const val powerSpinner = "com.github.skydoves:powerspinner:${Versions.powerSpinner}"
 
+    // Password View
+    const val passwordView = "io.github.chaosleung:pinview:${Versions.passwordView}"
 }
