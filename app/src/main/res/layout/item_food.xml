@@ -5,6 +5,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:padding="@dimen/dimen_2dp"
+    android:layout_marginTop="@dimen/dimen_20dp"
     app:cardCornerRadius="@dimen/dimen_20dp"
     app:cardElevation="@dimen/dimen_1dp"
     app:cardPreventCornerOverlap="true">
