@@ -63,6 +63,7 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/layout_menu_add_category.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bg_border_table.xml" value="0.194" />
         <entry key="app/src/main/res/drawable/bg_table_menu_management.xml" value="0.129" />
+        <entry key="app/src/main/res/drawable/bg_table_text.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_back.xml" value="0.191" />
         <entry key="app/src/main/res/drawable/ic_bag_shopping_light.xml" value="0.1145" />
         <entry key="app/src/main/res/drawable/ic_empty.xml" value="0.337" />
@@ -80,7 +81,7 @@
         <entry key="app/src/main/res/layout/fragment_enter_password_to_menu_settings.xml" value="0.14" />
         <entry key="app/src/main/res/layout/fragment_env_settings.xml" value="0.11875" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.11875" />
+        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_menu_management.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_menu_setting.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_option_settings.xml" value="0.33" />
