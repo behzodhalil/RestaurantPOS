@@ -24,4 +24,5 @@ object Versions {
     const val powerSpinner = "1.1.9"
     const val passwordViewVersion = "1.4.4"
     const val expandableLayoutVersion = "1.4.1"
+    const val pinEditVersion = "1.2.6"
 }
