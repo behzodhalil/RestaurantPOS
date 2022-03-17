@@ -81,6 +81,8 @@
     <dimen name="dimen_190dp">190dp</dimen>
     <dimen name="dimen_200dp">200dp</dimen>
     <dimen name="dimen_250dp">250dp</dimen>
+    <dimen name="dimen_260dp">260dp</dimen>
+    <dimen name="dimen_270dp">270dp</dimen>
     <dimen name="dimen_280dp">280dp</dimen>
     <dimen name="dimen_300dp">300dp</dimen>
     <dimen name="dimen_325dp">325dp</dimen>
