@@ -18,7 +18,4 @@ class OrderTakeOutFragment : BaseFragment<FragmentOrderTakeOutBinding>() {
         return FragmentOrderTakeOutBinding.inflate(inflater,container,false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-    }
 }
