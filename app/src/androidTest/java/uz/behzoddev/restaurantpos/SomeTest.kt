@@ -1,4 +1,3 @@
 package uz.behzoddev.restaurantpos
 
-class SomeTest {
-}
+class SomeTest
