@@ -59,4 +59,5 @@ dependencies {
     timber()
     logger()
     powerSpinner()
+    implementation("io.github.chaosleung:pinview:1.4.4")
 }
