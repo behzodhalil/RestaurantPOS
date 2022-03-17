@@ -4,4 +4,26 @@
     <color name="hot_pink">#FF69B4</color>
     <color name="medium_slate_blue">#7B68EE</color>
     <color name="royal_blue">#4169E1</color>
+    <string name="library_name">Password View</string>
+    <string name="password_not_match">비밀번호가 일치하지 않습니다.</string>
+    <string name="please_enter_password">4~6자리의 비밀번호를 입력하세요</string>
+    <string name="re_enter_password">새 비밀번호 다시 입력하세요</string>
+    <declare-styleable name="PasswordView">
+        <attr format="integer" name="password_count"/>
+        <attr format="dimension" name="password_radius"/>
+        <attr format="dimension" name="password_between_margin"/>
+        <attr format="color" name="password_input_color"/>
+        <attr format="color" name="password_not_input_color"/>
+        <attr format="color" name="password_outline_color"/>
+        <attr format="color" name="password_correct_color"/>
+        <attr format="color" name="password_incorrect_color"/>
+        <attr format="integer" name="password_correct_duration"/>
+        <attr format="integer" name="password_incorrect_duration"/>
+        <attr format="integer" name="password_color_change_duration"/>
+        <attr format="integer" name="password_input_and_remove_duration"/>
+        <attr format="dimension" name="password_correct_top"/>
+        <attr format="dimension" name="password_correct_bottom"/>
+        <attr format="dimension" name="password_incorrect_max_width"/>
+        <attr format="dimension" name="password_outline_stroke_width"/>
+    </declare-styleable>
 </resources>

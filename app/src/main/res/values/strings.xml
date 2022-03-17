@@ -116,6 +116,8 @@
     <string name="text_notice_button">확인</string>
     <string name="text_empty_image">Empty image</string>
     <string name="text_empty">아직 메뉴가 없습니다.</string>
+    <string name="text_back">Back</string>
+    <string name="text_enter_password">비밀번호를 입력하세요</string>
 
 
 </resources>

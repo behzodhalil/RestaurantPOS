@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="PasswordView">
-        <attr name="passcodeViewType" format="enum">
-            <enum name="set_passcode" value="0"/>
-            <enum name="check_passcode" value="1"/>
-        </attr>
-        <attr name="normalStateColor" format="color"/>
-        <attr name="correctStateColor" format="color"/>
-        <attr name="wrongStateColor" format="color"/>
-        <attr name="numberTextColor" format="color"/>
-        <attr name="passcodeLength" format="integer"/>
-        <attr name="firstInputTip" format="string"/>
-        <attr name="secondInputTip" format="string"/>
-        <attr name="wrongLengthTip" format="string"/>
-        <attr name="wrongInputTip" format="string"/>
-        <attr name="correctInputTip" format="string"/>
+        <attr name="password_count" format="integer" />
+        <attr name="password_radius" format="dimension" />
+        <attr name="password_between_margin" format="dimension" />
+        <attr name="password_input_color" format="color" />
+        <attr name="password_not_input_color" format="color" />
+        <attr name="password_outline_color" format="color" />
+        <attr name="password_correct_color" format="color" />
+        <attr name="password_incorrect_color" format="color" />
+        <attr name="password_correct_duration" format="integer" />
+        <attr name="password_incorrect_duration" format="integer" />
+        <attr name="password_color_change_duration" format="integer" />
+        <attr name="password_input_and_remove_duration" format="integer" />
+        <attr name="password_correct_top" format="dimension" />
+        <attr name="password_correct_bottom" format="dimension" />
+        <attr name="password_incorrect_max_width" format="dimension" />
+        <attr name="password_outline_stroke_width" format="dimension" />
     </declare-styleable>
-
 </resources>
