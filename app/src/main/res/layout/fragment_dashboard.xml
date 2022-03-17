@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".view.main.DashboardFragment">
 
     <ImageView
@@ -36,10 +36,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="@dimen/dimen_150dp"
-        android:fontFamily="@font/noto_sans"
         android:layout_marginBottom="@dimen/dimen_350dp"
         android:backgroundTint="@color/milk"
         android:drawableTop="@drawable/ic_bag_shopping_light"
+        android:fontFamily="@font/noto_sans"
         android:paddingTop="40dp"
         android:text="@string/text_order_take_out"
         android:textColor="@color/black_russian"
@@ -58,9 +58,9 @@
         android:layout_marginBottom="@dimen/dimen_350dp"
         android:backgroundTint="@color/milk"
         android:drawableTop="@drawable/ic_store_light"
+        android:fontFamily="@font/noto_sans"
         android:paddingTop="40dp"
         android:text="@string/text_order_store"
-        android:fontFamily="@font/noto_sans"
         android:textColor="@color/black_russian"
         android:textSize="50sp"
         android:textStyle="bold"

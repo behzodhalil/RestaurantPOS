@@ -24,6 +24,7 @@
         android:layout_marginTop="@dimen/dimen_80dp"
         android:layout_marginStart="@dimen/dimen_40dp"
         android:src="@drawable/ic_back"
+        android:contentDescription="@string/text_back"
         />
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_menu_management"
