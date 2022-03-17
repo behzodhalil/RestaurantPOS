@@ -5,6 +5,7 @@ plugins {
     id("dagger.hilt.android.plugin")
     id("kotlin-parcelize")
     id("androidx.navigation.safeargs.kotlin")
+    `maven-publish`
 }
 
 android {
@@ -39,10 +40,12 @@ android {
     kotlinOptions {
         jvmTarget = ("1.8")
     }
+
 }
 
 dependencies {
     implementation("androidx.test:core-ktx:1.4.0")
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     core()
     appCompat()
     materialDesign()
@@ -60,4 +63,5 @@ dependencies {
     logger()
     powerSpinner()
     passwordView()
+    implementation("com.github.poovamraj:PinEditTextField:1.2.6")
 }

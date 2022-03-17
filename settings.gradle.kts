@@ -3,7 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
-        maven(url = "https://jitpack.io")
+
     }
 }
 dependencyResolutionManagement {
@@ -11,6 +11,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven("https://jitpack.io")
     }
 }
 rootProject.name = "RestaurantPOS"
