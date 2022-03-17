@@ -22,6 +22,9 @@
         <action
             android:id="@+id/actionMainFragmentToEnterPasswordFragment"
             app:destination="@id/enterPasswordFragment" />
+        <action
+            android:id="@+id/actionMainFragmentToMenuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuSettingsFragment"
@@ -84,4 +87,9 @@
             android:id="@+id/actionEnterPasswordFragmentToMenuSettingsFragment"
             app:destination="@id/menuSettingsFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="uz.behzoddev.restaurantpos.view.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
 </navigation>
