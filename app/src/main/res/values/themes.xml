@@ -49,4 +49,12 @@
         <item name="boxCornerRadiusBottomEnd">@dimen/dimen_20dp</item>
         <item name="boxCornerRadiusBottomStart">@dimen/dimen_20dp</item>
     </style>
+
+    <style name = "TableLayout" parent="Widget.Design.TabLayout">
+        <item name="android:textSize">38sp</item>
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="android:background">@drawable/bg_table_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>
