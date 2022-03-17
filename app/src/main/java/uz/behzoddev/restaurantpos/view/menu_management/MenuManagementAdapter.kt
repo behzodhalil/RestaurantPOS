@@ -31,6 +31,7 @@ class MenuManagementAdapter : RecyclerView.Adapter<MenuManagementAdapter.MenuMan
     }
 
     val differ = AsyncListDiffer(this, diffCallBack)
+
     // https://medium.com/simform-engineering/listadapter-a-recyclerview-adapter-extension-5359d13bd879
     // https://www.raywenderlich.com/21954410-speed-up-your-android-recyclerview-using-diffutil
     // https://www.raywenderlich.com/1560485-android-recyclerview-tutorial-with-kotlin
