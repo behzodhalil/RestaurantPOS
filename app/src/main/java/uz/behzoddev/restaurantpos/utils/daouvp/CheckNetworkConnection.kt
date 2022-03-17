@@ -24,12 +24,4 @@ class CheckNetworkConnection(context: Context) : ConnectivityManager.NetworkCall
         connectivityManager.unregisterNetworkCallback(this)
     }
 
-    override fun onAvailable(network: Network) {
-        super.onAvailable(network)
-    }
-
-    override fun onLost(network: Network) {
-        super.onLost(network)
-    }
-
 }
