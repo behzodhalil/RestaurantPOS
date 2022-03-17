@@ -96,6 +96,10 @@ fun DependencyHandler.powerSpinner() {
     implementation(Dependencies.powerSpinner)
 }
 
+// Implementation function of Password View
+fun DependencyHandler.passwordView() {
+    implementation(Dependencies.passwordView)
+}
 
 private fun DependencyHandler.implementation(depName: String) {
     add("implementation",depName)
