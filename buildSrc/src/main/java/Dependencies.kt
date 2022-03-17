@@ -62,5 +62,8 @@ object Dependencies {
     const val powerSpinner = "com.github.skydoves:powerspinner:${Versions.powerSpinner}"
 
     // Password View
-    const val passwordView = "io.github.chaosleung:pinview:${Versions.passwordView}"
+    const val passwordView = "io.github.chaosleung:pinview:${Versions.passwordViewVersion}"
+
+    // Expandable Layout
+    const val expandableLayout = "com.github.iammert:ExpandableLayout:${Versions.expandableLayoutVersion}"
 }
