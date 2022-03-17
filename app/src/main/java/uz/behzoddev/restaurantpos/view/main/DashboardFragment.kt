@@ -43,7 +43,7 @@ class DashboardFragment : BaseFragment<FragmentDashboardBinding>() {
 
     private fun onNavigateToStore() = with(binding) {
         btnOrderStore.setOnClickListener {
-            findNavController().navigate(R.id.actionMainFragmentToOrderStoreFragment)
+            findNavController().navigate(R.id.actionMainFragmentToMenuFragment)
         }
     }
 
