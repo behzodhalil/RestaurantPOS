@@ -1,5 +1,9 @@
 package uz.behzoddev.password_view
 
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
+import android.animation.ValueAnimator
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
@@ -8,50 +12,142 @@ import android.graphics.Paint.ANTI_ALIAS_FLAG
 import android.util.AttributeSet
 import android.view.View
 import androidx.annotation.Nullable
+import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 import kotlin.math.min
 
-// https://github.com/hanks-zyh/PasscodeView/blob/master/passcodeview/src/main/res/layout/layout_passcode_view.xml
 
-internal class CircleView : View {
-    private var mPaint: Paint? = null
-    private var color = Color.BLACK
+internal class CircleView @JvmOverloads constructor(
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
+) : View(context, attrs, defStyleAttr) {
 
-    constructor(context: Context?) : super(context) {
-        init()
+    private val outLinePaint = Paint(ANTI_ALIAS_FLAG).apply {
+        color = Color.GRAY
+        strokeWidth = 4f
+        style = Paint.Style.STROKE
     }
 
-    constructor(context: Context?, @Nullable attrs: AttributeSet?) : super(context, attrs) {
-        init()
+    private val fillCirclePaint = Paint(ANTI_ALIAS_FLAG).apply {
+        color = Color.WHITE
+        style = Paint.Style.FILL
     }
 
-    constructor(context: Context?, @Nullable attrs: AttributeSet?, defStyleAttr: Int) : super(
-        context,
-        attrs,
-        defStyleAttr
-    ) {
-        init()
+    private val fillAndStrokeCirclePaint = Paint(ANTI_ALIAS_FLAG).apply {
+        color = Color.BLACK
+        style = Paint.Style.FILL_AND_STROKE
     }
 
-    private fun init() {
-        mPaint = Paint(ANTI_ALIAS_FLAG)
+    private var radius = 16f
+
+    private var animator: ValueAnimator? = null
+
+    private var inputAndRemoveAnimationDuration = 200L
+
+    private var progress = 0.0f
+        set(value) {
+            field = value
+            postInvalidateOnAnimation()
+        }
+
+    override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
+        val width = ((radius * 2) + (outLinePaint.strokeWidth)).toInt()
+        val height = ((radius * 2) + (outLinePaint.strokeWidth)).toInt()
+        setMeasuredDimension(width, height)
     }
 
-    fun setColor(color: Int) {
-        this.color = color
+    @SuppressLint("DrawAllocation")
+    override fun onDraw(canvas: Canvas) {
+
+        val halfOutLineStrokeWidth = outLinePaint.strokeWidth / 2
+
+        // fill circle
+        canvas.drawCircle(
+            radius + halfOutLineStrokeWidth,
+            radius + halfOutLineStrokeWidth,
+            lerp(radius - halfOutLineStrokeWidth, 0f, progress),
+            fillCirclePaint
+        )
+
+        // outline circle
+        canvas.drawCircle(
+            radius + halfOutLineStrokeWidth,
+            radius + halfOutLineStrokeWidth,
+            lerp(radius, 0f, progress),
+            outLinePaint
+        )
+
+        // fill and stroke circle
+        canvas.drawCircle(
+            radius + halfOutLineStrokeWidth,
+            radius + halfOutLineStrokeWidth,
+            lerp(0f, radius + halfOutLineStrokeWidth, progress),
+            fillAndStrokeCirclePaint
+        )
+    }
+
+    fun animateAndInvoke(onEnd: (() -> Unit)? = null) {
+        if (animator != null) {
+            return
+        }
+
+        val newProgress = if (progress == 0f) 1f else 0f
+        animator = ValueAnimator.ofFloat(progress, newProgress).apply {
+            duration = inputAndRemoveAnimationDuration
+            addUpdateListener {
+                progress = it.animatedValue as Float
+            }
+            addListener(object : AnimatorListenerAdapter() {
+                override fun onAnimationEnd(animation: Animator?) {
+                    animator = null
+                    onEnd?.invoke()
+                }
+            })
+            interpolator = FastOutLinearInInterpolator()
+        }
+        animator?.start()
+    }
+
+    fun setRadius(radius: Float) {
+        this.radius = radius
         invalidate()
     }
 
-    fun getColor(): Int {
-        return color
+    fun setFillCircleColor(color: Int) {
+        fillCirclePaint.color = color
+        postInvalidateOnAnimation()
     }
 
-    override fun onDraw(canvas: Canvas) {
-        val width = (width - paddingLeft - paddingRight) * 0.5
-        val height = (height - paddingTop - paddingBottom) * 0.5
-        val cx = (paddingLeft + width).toInt()
-        val cy = (paddingTop + height).toInt()
-        val radius = min(width, height).toInt()
-        mPaint!!.color = color
-        canvas.drawCircle(cx.toFloat(), cy.toFloat(), radius.toFloat(), mPaint!!)
+    fun setOutLineColor(color: Int) {
+        outLinePaint.color = color
+        postInvalidateOnAnimation()
+    }
+
+    fun setFillAndStrokeCircleColor(color: Int) {
+        fillAndStrokeCirclePaint.color = color
+        postInvalidateOnAnimation()
+    }
+
+    fun setOutlineStrokeWidth(strokeWidth: Float) {
+        outLinePaint.strokeWidth = strokeWidth
+    }
+
+    fun isAnimating(): Boolean = animator != null
+
+    fun getFillAndStrokeCircleColor(): Int = fillAndStrokeCirclePaint.color
+
+    fun getFillCircleColor(): Int = fillCirclePaint.color
+
+    fun getOutLineColor(): Int = outLinePaint.color
+
+    fun setInputAndRemoveAnimationDuration(duration: Long) {
+        inputAndRemoveAnimationDuration = duration
+    }
+
+    /*
+     * Linearly interpolate between two values.
+     */
+    private fun lerp(a: Float, b: Float, t: Float): Float {
+        return a + (b - a) * t
     }
 }
