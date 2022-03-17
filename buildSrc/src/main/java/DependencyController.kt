@@ -101,6 +101,11 @@ fun DependencyHandler.passwordView() {
     implementation(Dependencies.passwordView)
 }
 
+// Implementation function of Expandable Layout
+fun DependencyHandler.expandableLayout() {
+    implementation(Dependencies.expandableLayout)
+}
+
 private fun DependencyHandler.implementation(depName: String) {
     add("implementation",depName)
 }
