@@ -22,5 +22,6 @@ object Versions {
     const val loggerVersion = "2.2.0"
     const val appProviderVersion = "1.4.0"
     const val powerSpinner = "1.1.9"
-    const val passwordView = "1.4.4"
+    const val passwordViewVersion = "1.4.4"
+    const val expandableLayoutVersion = "1.4.1"
 }
