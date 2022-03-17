@@ -64,5 +64,5 @@ dependencies {
     powerSpinner()
     passwordView()
     expandableLayout()
-    implementation("com.github.poovamraj:PinEditTextField:1.2.6")
+    pinEdit()
 }
