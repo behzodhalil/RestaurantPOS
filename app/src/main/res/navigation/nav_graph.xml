@@ -20,8 +20,8 @@
             android:id="@+id/actionMainFragmentToOrderTakeOutFragment"
             app:destination="@id/orderTakeOutFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_orderConfirmDialog"
-            app:destination="@id/orderConfirmDialog" />
+            android:id="@+id/actionMainFragmentToEnterPasswordFragment"
+            app:destination="@id/enterPasswordFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuSettingsFragment"
@@ -75,4 +75,13 @@
         android:name="uz.behzoddev.restaurantpos.view.dialogs.OrderConfirmDialog"
         android:label="OrderConfirmDialog" >
     </dialog>
+    <fragment
+        android:id="@+id/enterPasswordFragment"
+        android:name="uz.behzoddev.restaurantpos.view.enter_password.EnterPasswordFragment"
+        android:label="fragment_enter_password_to_menu_settings"
+        tools:layout="@layout/fragment_enter_password_to_menu_settings" >
+        <action
+            android:id="@+id/actionEnterPasswordFragmentToMenuSettingsFragment"
+            app:destination="@id/menuSettingsFragment" />
+    </fragment>
 </navigation>
