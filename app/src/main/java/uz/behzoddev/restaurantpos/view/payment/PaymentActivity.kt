@@ -62,7 +62,4 @@ class PaymentActivity : AppCompatActivity() {
         var strSendReplyMsgToPOS = ""
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 }
