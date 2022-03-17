@@ -27,4 +27,36 @@ class ItemDataSourceImpl @Inject constructor(
     override fun fetchAllFoodItemsByName(): Flow<List<FoodItem>> {
         return itemDao.fetchAllFoodItemsByName()
     }
+
+    override fun fetchByColdBrew(): Flow<List<FoodItem>> {
+        return itemDao.fetchByColdBrew()
+    }
+
+    override fun fetchByBrood(): Flow<List<FoodItem>> {
+        return itemDao.fetchByBrood()
+    }
+
+    override fun fetchByEspresso(): Flow<List<FoodItem>> {
+        return itemDao.fetchByEspresso()
+    }
+
+    override fun fetchByFrappucino(): Flow<List<FoodItem>> {
+        return itemDao.fetchByFrappucino()
+    }
+
+    override fun fetchByBlended(): Flow<List<FoodItem>> {
+        return itemDao.fetchByBlended()
+    }
+
+    override fun fetchByPhysio(): Flow<List<FoodItem>> {
+        return itemDao.fetchByPhysio()
+    }
+
+    override fun fetchByTea(): Flow<List<FoodItem>> {
+        return itemDao.fetchByTea()
+    }
+
+    override fun fetchByJuice(): Flow<List<FoodItem>> {
+        return itemDao.fetchByJuice()
+    }
 }
