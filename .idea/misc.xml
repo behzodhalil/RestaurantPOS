@@ -36,6 +36,31 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/item_food.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/layout_add_item.xml" value="0.10243055555555555" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/layout_menu_add.xml" value="0.15" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/activity_main.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/activity_payment.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/dialog_order_confirm.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/fragment_add_item.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/fragment_add_menu_category.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/fragment_add_store.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/fragment_dashboard.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/fragment_enter_password_to_menu_settings.xml" value="0.15" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/fragment_env_settings.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/fragment_menu_management.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/fragment_menu_setting.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/fragment_option_settings.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/fragment_order_store.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/fragment_store_settings.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/item_expand_menu_content.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/item_expand_menu_header.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/item_food.xml" value="0.35" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/item_food_settings_header.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/item_food_settings_row.xml" value="0.12" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/item_header_menu.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/layout_add_item.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/layout_autocomplete.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/layout_dropdown.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/layout_empty.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/layout_menu_add_category.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bg_border_table.xml" value="0.194" />
         <entry key="app/src/main/res/drawable/bg_table_menu_management.xml" value="0.129" />
         <entry key="app/src/main/res/drawable/ic_back.xml" value="0.191" />
