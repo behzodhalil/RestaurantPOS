@@ -4,18 +4,18 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="21"
-6-->/home/behzod/AndroidStudioProjects/RestaurantPOS/password-view/src/main/AndroidManifest.xml
+6-->C:\Users\user\AndroidStudioProjects\RestaurantPOS\password-view\src\main\AndroidManifest.xml
 7        android:targetSdkVersion="31" />
-7-->/home/behzod/AndroidStudioProjects/RestaurantPOS/password-view/src/main/AndroidManifest.xml
+7-->C:\Users\user\AndroidStudioProjects\RestaurantPOS\password-view\src\main\AndroidManifest.xml
 8
 9    <application
-9-->/home/behzod/AndroidStudioProjects/RestaurantPOS/password-view/src/main/AndroidManifest.xml:4:5-7:19
+9-->C:\Users\user\AndroidStudioProjects\RestaurantPOS\password-view\src\main\AndroidManifest.xml:4:5-7:19
 10        android:allowBackup="true"
-10-->/home/behzod/AndroidStudioProjects/RestaurantPOS/password-view/src/main/AndroidManifest.xml:4:18-44
+10-->C:\Users\user\AndroidStudioProjects\RestaurantPOS\password-view\src\main\AndroidManifest.xml:4:18-44
 11        android:label="@string/library_name"
-11-->/home/behzod/AndroidStudioProjects/RestaurantPOS/password-view/src/main/AndroidManifest.xml:5:9-45
+11-->C:\Users\user\AndroidStudioProjects\RestaurantPOS\password-view\src\main\AndroidManifest.xml:5:9-45
 12        android:supportsRtl="true" >
-12-->/home/behzod/AndroidStudioProjects/RestaurantPOS/password-view/src/main/AndroidManifest.xml:6:9-35
+12-->C:\Users\user\AndroidStudioProjects\RestaurantPOS\password-view\src\main\AndroidManifest.xml:6:9-35
 13    </application>
 14
 15</manifest>
