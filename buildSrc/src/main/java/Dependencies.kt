@@ -66,4 +66,7 @@ object Dependencies {
 
     // Expandable Layout
     const val expandableLayout = "com.github.iammert:ExpandableLayout:${Versions.expandableLayoutVersion}"
+
+    // Pin Edit
+    const val pinEdit = "com.github.poovamraj:PinEditTextField:${Versions.pinEditVersion}"
 }
