@@ -36,7 +36,7 @@ class DashboardFragment : BaseFragment<FragmentDashboardBinding>() {
             clickCounter +=1
             if(clickCounter == 5) {
                 clickCounter = 0
-                findNavController().navigate(R.id.actionMainFragmentToMenuSettingsFragment)
+                findNavController().navigate(R.id.actionMainFragmentToEnterPasswordFragment)
             }
         }
     }
