@@ -120,4 +120,13 @@
     <string name="text_enter_password">비밀번호를 입력하세요</string>
 
 
+    <!-- Categories of Coffee -->
+    <string name="cold_brew_coffee">콜드브루</string>
+    <string name="brood_coffee">브루드</string>
+    <string name="espresso">에스프레소</string>
+    <string name="frappucino">프라푸치노</string>
+    <string name="blended">블렌디드</string>
+    <string name="starbucks_physio">피지오</string>
+    <string name="tea">티</string>
+    <string name="juice">주스</string>
 </resources>
