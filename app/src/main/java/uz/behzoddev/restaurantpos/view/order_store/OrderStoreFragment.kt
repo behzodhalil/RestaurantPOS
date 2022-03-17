@@ -14,6 +14,9 @@ private const val CATEGORY = "category"
 @AndroidEntryPoint
 class OrderStoreFragment : BaseFragment<FragmentOrderStoreBinding>() {
 
+    private lateinit var orderStoreAdapter: OrderStoreAdapter
+    private
+
     companion object {
         @JvmStatic
         fun newInstance(string: String) =
