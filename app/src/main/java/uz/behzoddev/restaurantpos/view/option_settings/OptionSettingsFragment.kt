@@ -18,10 +18,6 @@ class OptionSettingsFragment : BaseFragment<FragmentOptionSettingsBinding>() {
         return FragmentOptionSettingsBinding.inflate(inflater,container,false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-    }
-
     private fun onNavigatePinSettings() {
 
     }
