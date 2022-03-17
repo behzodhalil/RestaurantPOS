@@ -96,4 +96,53 @@ abstract class InteractorModule {
     internal abstract fun provideUpdateStoreInteractor(
         updateStoreInteractor: UpdateStoreInteractorImpl
     ) : UpdateStoreInteractor
+
+
+    @Binds
+    @Singleton
+    internal abstract fun provideFetchByBlended(
+        fetchByBlendedImpl: FetchByBlendedImpl
+    ) : FetchByBlended
+
+    @Binds
+    @Singleton
+    internal abstract fun provideFetchByEspresso(
+        fetchByEspressoImpl: FetchByEspressoImpl
+    ) : FetchByEspresso
+
+    @Binds
+    @Singleton
+    internal abstract fun provideFetchByBrood(
+        fetchByBroodImpl: FetchByBroodImpl
+    ): FetchByBrood
+
+    @Binds
+    @Singleton
+    internal abstract fun provideFetchByColdBrew(
+        fetchByColdBrewImpl: FetchByColdBrewImpl
+    ): FetchByColdBrew
+
+    @Binds
+    @Singleton
+    internal abstract fun provideFetchByFrappucino(
+        fetchByFrappucinoImpl: FetchByFrappucinoImpl
+    ): FetchByFrappucino
+
+    @Binds
+    @Singleton
+    internal abstract fun provideFetchByJuice(
+        fetchByJuiceImpl: FetchByJuiceImpl
+    ) : FetchByJuice
+
+    @Binds
+    @Singleton
+    internal abstract fun provideFetchByTea(
+        fetchByTeaImpl: FetchByTeaImpl
+    ) : FetchByTea
+
+    @Binds
+    @Singleton
+    internal abstract fun provideFetchByPhysio(
+        fetchByPhysio: FetchByPhysioImpl
+    ): FetchByPhysio
 }
