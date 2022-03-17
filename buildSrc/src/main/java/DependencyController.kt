@@ -106,6 +106,10 @@ fun DependencyHandler.expandableLayout() {
     implementation(Dependencies.expandableLayout)
 }
 
+// Implementation function of Pin Edit
+fun DependencyHandler.pinEdit() {
+    implementation(Dependencies.pinEdit)
+}
 private fun DependencyHandler.implementation(depName: String) {
     add("implementation",depName)
 }
