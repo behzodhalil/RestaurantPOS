@@ -9,10 +9,11 @@
     tools:context=".view.order_store.OrderStoreFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/order_store_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/item_food"
-        app:spanCount="2"
+        app:spanCount="3"
         tools:context = ".view.MainActivity"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         />
