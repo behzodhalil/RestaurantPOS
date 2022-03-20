@@ -18,11 +18,13 @@ import uz.behzoddev.restaurantpos.common.states.ItemState
 import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 import uz.behzoddev.restaurantpos.databinding.FragmentMenuManagementBinding
 import uz.behzoddev.restaurantpos.presentation.menu.MenuManagementViewModel
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MenuManagementFragment : BaseFragment<FragmentMenuManagementBinding>() {
 
-    private lateinit var menuManagementAdapter: MenuManagementAdapter
+    @Inject
+    lateinit var menuManagementAdapter: MenuManagementAdapter
     private val menuManagementViewModel : MenuManagementViewModel by viewModels()
 
     override fun getViewBinding(
@@ -41,7 +43,6 @@ class MenuManagementFragment : BaseFragment<FragmentMenuManagementBinding>() {
     }
 
     private fun setupRecyclerView() = with(binding) {
-        menuManagementAdapter = MenuManagementAdapter()
         val menuManagementRV = layoutMenuManagement.recyclerViewMenuManagement
         menuManagementRV.adapter = menuManagementAdapter
     }
