@@ -3,7 +3,7 @@ package uz.behzoddev.restaurantpos.common.coroutines
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 
-/**
+/*
  * A main interface that manages Coroutine context.This class also provides a crucial benefit for
  * testing
  */
