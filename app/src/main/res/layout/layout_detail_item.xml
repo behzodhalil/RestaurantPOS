@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_detail_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_250dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:contentDescription="@string/text_detail_photo"
+        android:padding="@dimen/dimen_50dp"
+        android:src="@drawable/ic_photo" />
+
+    <TextView
+        android:id="@+id/tv_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:fontFamily="@font/noto_sans"
+        android:textAlignment="center"
+        android:textColor="@color/cod_gray"
+        android:textSize="@dimen/font_size_40sp"
+        android:textStyle="bold"
+        tools:text="@string/text_detail_title" />
+
+    <TextView
+        android:id="@+id/tv_detail_title_eng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:fontFamily="@font/noto_sans"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_size_30sp"
+        android:textStyle="bold"
+        tools:text="@string/text_detail_title_eng" />
+
+    <TextView
+        android:id="@+id/tv_detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_80dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_80dp"
+        android:fontFamily="@font/noto_sans"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_size_35sp"
+        tools:text="@string/text_detail_description" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_80dp"
+        android:fontFamily="@font/noto_sans"
+        android:text="@string/text_detail_nutritional_information"
+        android:textColor="@color/cod_gray"
+        android:textSize="@dimen/font_size_50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_40dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:fontFamily="@font/noto_sans"
+        android:text="@string/text_detail_tall"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/font_size_40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_100dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/text_detail_serving_size"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_serving_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_60dp"
+            android:fontFamily="@font/noto_sans"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            tools:text="@string/text_detail_serving_size_value" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_200dp"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/text_detail_sodium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_detail_sodium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_60dp"
+            android:fontFamily="@font/noto_sans"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            tools:text="@string/text_detail_sodium_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_100dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/text_detail_saturated_fat"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_saturated_fat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_120dp"
+            android:fontFamily="@font/noto_sans"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            tools:text="@string/text_detail_saturated_fat_value" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_220dp"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/text_detail_protein"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_protein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_80dp"
+            android:fontFamily="@font/noto_sans"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            tools:text="@string/text_detail_protein_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_100dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/text_detail_sugar"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_170dp"
+            android:fontFamily="@font/noto_sans"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            tools:text="@string/text_detail_sugar_value" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_210dp"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/text_detail_caffeine"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_caffeine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_80dp"
+            android:fontFamily="@font/noto_sans"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_30sp"
+            tools:text="@string/text_detail_caffeine_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_100dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/text_detail_allergens"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_allergen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:fontFamily="@font/noto_sans"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/font_size_40sp"
+            tools:text="@string/text_detail_allergens_value" />
+    </LinearLayout>
+
+</LinearLayout>
