@@ -5,9 +5,9 @@ import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 import uz.behzoddev.restaurantpos.domain.repositories.ItemRepository
 import javax.inject.Inject
 
-class FetchByBlendedImpl @Inject constructor(
+class FetchByBlendedInteractorImpl @Inject constructor(
     private val itemRepository: ItemRepository
-)  : FetchByBlended {
+)  : FetchByBlendedInteractor {
 
     override fun invoke(): Flow<List<FoodItem>> {
         return itemRepository.fetchByBlended()
