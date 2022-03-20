@@ -2,8 +2,8 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="@dimen/dimen_250dp"
+    android:layout_height="@dimen/dimen_400dp"
     android:padding="@dimen/dimen_2dp"
     android:layout_marginTop="@dimen/dimen_20dp"
     app:cardCornerRadius="@dimen/dimen_20dp"
@@ -21,6 +21,7 @@
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_launcher_background"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -55,10 +56,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
+            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_menu_name"
             tools:text="4000원" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:src="@drawable/ic_food_information"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_menu_price"
+            app:layout_constraintTop_toBottomOf="@id/tv_menu_name"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
