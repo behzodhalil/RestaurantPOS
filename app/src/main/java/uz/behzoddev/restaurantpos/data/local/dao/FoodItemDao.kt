@@ -4,6 +4,13 @@ import androidx.room.*
 import kotlinx.coroutines.flow.Flow
 import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 import uz.behzoddev.restaurantpos.utils.*
+import uz.behzoddev.restaurantpos.utils.CoffeeCategory.BLENDED
+import uz.behzoddev.restaurantpos.utils.CoffeeCategory.BROOD_COFFEE
+import uz.behzoddev.restaurantpos.utils.CoffeeCategory.COLD_BREW_COFFEE
+import uz.behzoddev.restaurantpos.utils.CoffeeCategory.ESPRESSO
+import uz.behzoddev.restaurantpos.utils.CoffeeCategory.JUICE
+import uz.behzoddev.restaurantpos.utils.CoffeeCategory.STARBUCKS_PHYSIO
+import uz.behzoddev.restaurantpos.utils.CoffeeCategory.TEA
 
 /*
 * Provides access to read/write operations on the food item table.
@@ -28,7 +35,7 @@ interface FoodItemDao {
     fun fetchByBrood(): Flow<List<FoodItem>>
     @Query("SELECT * FROM food_item_table WHERE food_item_category = '$ESPRESSO' ORDER BY food_item_category")
     fun fetchByEspresso(): Flow<List<FoodItem>>
-    @Query("SELECT * FROM food_item_table WHERE food_item_category = '$FRAPPUCCINO' ORDER BY food_item_category")
+    @Query("SELECT * FROM food_item_table WHERE food_item_category = '${CoffeeCategory.FRAPPUCCINO}' ORDER BY food_item_category")
     fun fetchByFrappucino(): Flow<List<FoodItem>>
     @Query("SELECT *FROM food_item_table WHERE food_item_category = '$BLENDED' ORDER BY food_item_name")
     fun fetchByBlended(): Flow<List<FoodItem>>
