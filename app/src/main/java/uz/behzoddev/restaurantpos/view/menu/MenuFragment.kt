@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import com.google.android.material.tabs.TabLayoutMediator
 import uz.behzoddev.restaurantpos.R
 import uz.behzoddev.restaurantpos.common.base.BaseFragment
+import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 import uz.behzoddev.restaurantpos.databinding.FragmentMenuBinding
+import uz.behzoddev.restaurantpos.view.order_store.OrderStoreAdapter
 
 class MenuFragment : BaseFragment<FragmentMenuBinding>() {
 
@@ -20,21 +22,20 @@ class MenuFragment : BaseFragment<FragmentMenuBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.menuViewPager.adapter = MenuViewPagerAdapter(this)
-        TabLayoutMediator(binding.tabLayout, binding.menuViewPager) { tab, position ->
+        binding.viewPager.adapter = MenuViewPagerAdapter(this)
+        TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             tab.text = getTabTitle(position)
         }.attach()
     }
 
     private fun getTabTitle(position: Int): String? =  when(position) {
         COLD_BREW_COFFEE_INDEX -> getString(R.string.cold_brew_coffee)
-        BROOD_COFFEE_INDEX -> getString(R.string.brood_coffee)
+        // BROOD_COFFEE_INDEX -> getString(R.string.brood_coffee)
         ESPRESSO_INDEX -> getString(R.string.espresso)
-        FRAPPUCCINO_INDEX -> getString(R.string.frappucino)
-        BLENDED_INDEX -> getString(R.string.blended)
-        STARBUCKS_PHYSIO_INDEX -> getString(R.string.starbucks_physio)
         TEA_INDEX -> getString(R.string.tea)
-        JUICE_INDEX -> getString(R.string.juice)
+       // FRAPPUCCINO_INDEX -> getString(R.string.frappucino)
+        // BLENDED_INDEX -> getString(R.string.blended)
+        // STARBUCKS_PHYSIO_INDEX -> getString(R.string.starbucks_physio)
         else -> null
     }
 }
