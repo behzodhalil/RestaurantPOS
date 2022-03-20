@@ -30,6 +30,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_enter_password_to_menu_settings.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_espressso.xml" value="0.11649305555555556" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_frappuccino.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_item_detail.xml" value="0.11649305555555556" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_item_detail_confirm.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_juice.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_menu.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_menu_management.xml" value="0.14" />
@@ -47,7 +49,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/item_expand_menu_footer.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/item_expand_menu_header.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/item_food.xml" value="0.25" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/layout_add_item.xml" value="0.10243055555555555" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/layout_add_item.xml" value="0.12" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/layout_detail_item.xml" value="0.17" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/layout_menu_add.xml" value="0.15" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/activity_main.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS3/app/src/main/res/layout/activity_payment.xml" value="0.11666666666666667" />

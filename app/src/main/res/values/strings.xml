@@ -130,4 +130,28 @@
     <string name="tea">티</string>
     <string name="juice">주스</string>
     <string name="text_category">Category</string>
+
+    <!-- Detail Item Texts -->
+    <string name="text_detail_photo">Detail Photo</string>
+    <string name="text_detail_title">콜드 브루 플로트</string>
+    <string name="text_detail_title_eng">Cold Brew Float</string>
+    <string name="text_detail_description">[리저브 전용음료] 리저브 콜드 브루 위에 녹아 내리는 한 스쿱의 바닐라 아이스크림</string>
+    <string name="text_detail_nutritional_information">제품 영양 정보</string>
+    <string name="text_detail_tall">Tall(톨) / 355ml(12 fl oz)</string>
+    <string name="text_detail_serving_size">1회 제공량(kcal)</string>
+    <string name="text_detail_serving_size_value">225</string>
+    <string name="text_detail_saturated_fat">포화지방(g)</string>
+    <string name="text_detail_saturated_fat_value">10</string>
+    <string name="text_detail_protein">단백질(g)</string>
+    <string name="text_detail_protein_value">3</string>
+    <string name="text_detail_sodium">나트륨(mg)</string>
+    <string name="text_detail_sodium_value">70</string>
+    <string name="text_detail_sugar">당류(g)</string>
+    <string name="text_detail_sugar_value">100</string>
+    <string name="text_detail_caffeine">카페인(mg)</string>
+    <string name="text_detail_caffeine_value">190</string>
+    <string name="text_detail_allergens">알레르기 유발요인:</string>
+    <string name="text_detail_allergens_value">우유</string>
+
+
 </resources>
