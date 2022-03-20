@@ -9,8 +9,9 @@ import androidx.viewbinding.ViewBinding
 import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 import uz.behzoddev.restaurantpos.databinding.ItemExpandMenuContentBinding
 import uz.behzoddev.restaurantpos.databinding.ItemRowMenuBinding
+import javax.inject.Inject
 
-class MenuManagementAdapter : RecyclerView.Adapter<MenuManagementAdapter.MenuManagementViewHolder>() {
+class MenuManagementAdapter @Inject constructor() : RecyclerView.Adapter<MenuManagementAdapter.MenuManagementViewHolder>() {
 
     inner class MenuManagementViewHolder(val binding: ItemRowMenuBinding) : RecyclerView.ViewHolder(binding.root)
 
