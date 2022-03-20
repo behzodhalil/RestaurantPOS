@@ -9,6 +9,7 @@ import uz.behzoddev.restaurantpos.data.local.dao.FoodItemDao
 import uz.behzoddev.restaurantpos.data.local.dao.FoodMenuDao
 import uz.behzoddev.restaurantpos.data.local.dao.FoodStoreDao
 import uz.behzoddev.restaurantpos.data.local.db.RestaurantDatabase
+import javax.inject.Named
 import javax.inject.Singleton
 
 @Module
