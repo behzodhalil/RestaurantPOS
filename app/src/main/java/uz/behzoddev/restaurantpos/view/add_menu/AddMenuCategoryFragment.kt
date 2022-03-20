@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
@@ -12,6 +13,7 @@ import uz.behzoddev.restaurantpos.common.base.BaseFragment
 import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 import uz.behzoddev.restaurantpos.databinding.FragmentAddItemBinding
 import uz.behzoddev.restaurantpos.presentation.menu.AddMenuViewModel
+import uz.behzoddev.restaurantpos.utils.CoffeeCategory
 
 @AndroidEntryPoint
 class AddMenuCategoryFragment : BaseFragment<FragmentAddItemBinding>() {
@@ -28,6 +30,7 @@ class AddMenuCategoryFragment : BaseFragment<FragmentAddItemBinding>() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         insertMenu()
+        initCategory()
     }
 
     private fun insertMenu() = with(binding) {
@@ -38,6 +41,16 @@ class AddMenuCategoryFragment : BaseFragment<FragmentAddItemBinding>() {
             }
         }
 
+    private fun initCategory() {
+        val coffeeCategory = ArrayAdapter(
+            requireContext(),
+            R.layout.layout_autocomplete,
+            CoffeeCategory.coffeeCategory
+        )
+        with(binding) {
+            layoutMenuAddItem.actCategory.setAdapter(coffeeCategory)
+        }
+    }
     private fun fetchItems(): FoodItem = binding.layoutMenuAddItem.let {
         val title = it.tieMenuName.text.toString()
         val price = it.tieMenuPrice.text.toString().toLong()
