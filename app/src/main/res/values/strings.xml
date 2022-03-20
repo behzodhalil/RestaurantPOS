@@ -129,4 +129,5 @@
     <string name="starbucks_physio">피지오</string>
     <string name="tea">티</string>
     <string name="juice">주스</string>
+    <string name="text_category">Category</string>
 </resources>
