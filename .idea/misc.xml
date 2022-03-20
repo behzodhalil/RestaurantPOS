@@ -23,10 +23,14 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_add_menu.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_add_menu_category.xml" value="0.12" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_add_store.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_blended.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_brood.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_cold_brew_coffee.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_enter_password_to_menu_settings.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_espressso.xml" value="0.11649305555555556" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_frappuccino.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_juice.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_menu.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_menu_management.xml" value="0.14" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/fragment_menu_setting.xml" value="0.1" />
