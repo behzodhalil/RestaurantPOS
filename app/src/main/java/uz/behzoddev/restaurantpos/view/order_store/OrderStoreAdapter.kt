@@ -3,13 +3,13 @@ package uz.behzoddev.restaurantpos.view.order_store
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
-import androidx.recyclerview.widget.AsyncListUtil
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 import uz.behzoddev.restaurantpos.databinding.ItemFoodBinding
+import javax.inject.Inject
 
-class OrderStoreAdapter : RecyclerView.Adapter<OrderStoreAdapter.OrderStoreViewHolder>() {
+class OrderStoreAdapter @Inject constructor()  : RecyclerView.Adapter<OrderStoreAdapter.OrderStoreViewHolder>() {
 
     inner class OrderStoreViewHolder(val binding: ItemFoodBinding) :
         RecyclerView.ViewHolder(binding.root)
