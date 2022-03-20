@@ -10,6 +10,7 @@ class DeleteItemInteractorImpl @Inject constructor(
     private val itemRepository: ItemRepository,
     private val dispatcherProvider: DispatcherProviders
 ) : DeleteItemInteractor {
+
     override suspend fun invoke(foodItem: FoodItem): Int {
         return withContext(dispatcherProvider.io) {
             itemRepository.deleteFoodItem(foodItem)
