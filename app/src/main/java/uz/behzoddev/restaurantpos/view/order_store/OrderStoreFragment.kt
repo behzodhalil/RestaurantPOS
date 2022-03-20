@@ -4,25 +4,35 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
 import uz.behzoddev.restaurantpos.common.base.BaseFragment
+import uz.behzoddev.restaurantpos.common.extensions.debug
+import uz.behzoddev.restaurantpos.common.states.ItemState
+import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 import uz.behzoddev.restaurantpos.databinding.FragmentOrderStoreBinding
+import uz.behzoddev.restaurantpos.presentation.store.OrderStoreViewModel
+import uz.behzoddev.restaurantpos.view.menu.FoodCategoryAdapter
 
 
-private const val CATEGORY = "category"
+const val COFFEE_CATEGORY = "category"
 
 @AndroidEntryPoint
 class OrderStoreFragment : BaseFragment<FragmentOrderStoreBinding>() {
 
     private lateinit var orderStoreAdapter: OrderStoreAdapter
-    private
+    private lateinit var categoryAdapter: FoodCategoryAdapter
+
+    private val orderStoreViewModel: OrderStoreViewModel by viewModels()
 
     companion object {
         @JvmStatic
         fun newInstance(string: String) =
             OrderStoreFragment().apply {
                 arguments = Bundle().apply {
-                    putString(CATEGORY, string)
+                    putString(COFFEE_CATEGORY, string)
                 }
             }
     }
@@ -31,7 +41,44 @@ class OrderStoreFragment : BaseFragment<FragmentOrderStoreBinding>() {
         inflater: LayoutInflater,
         container: ViewGroup?
     ): FragmentOrderStoreBinding {
-        return FragmentOrderStoreBinding.inflate(inflater,container,false)
+        return FragmentOrderStoreBinding.inflate(inflater, container, false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initRecyclerView()
+        observerOrderStore()
+    }
+
+    private fun initRecyclerView() = with(binding) {
+        orderStoreAdapter = OrderStoreAdapter()
+        orderStoreRecyclerView.adapter = orderStoreAdapter
+    }
+
+    private fun initCategoryRecyclerView() = with(binding) {
+
+    }
+
+    private fun observerOrderStore() = lifecycleScope.launchWhenCreated {
+        orderStoreViewModel.orderStoreState.collect { result ->
+            when(result) {
+                is ItemState.Loading -> {
+
+                }
+                is ItemState.Success -> {
+                    fetchAllItems(result.data)
+                    debug { "${result.data}" }
+                }
+                is ItemState.Empty -> {
+
+                }
+                is ItemState.Failure -> {
+
+                }
+            }
+        }
+    }
+
+    private fun fetchAllItems(list: List<FoodItem>) = orderStoreAdapter.diffUtil.submitList(list)
 
 }
