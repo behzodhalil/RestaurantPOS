@@ -10,6 +10,7 @@ class UpdateItemInteractorImpl @Inject constructor(
     private val itemRepository: ItemRepository,
     private val dispatcherProvider: DispatcherProviders
 ) : UpdateItemInteractor {
+
     override suspend fun invoke(foodItem: FoodItem): Int {
         return withContext(dispatcherProvider.io) {
             itemRepository.updateFoodItem(foodItem)
