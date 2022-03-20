@@ -11,6 +11,7 @@ class FetchAllItemsInteractorImpl @Inject constructor(
     private val itemRepository: ItemRepository,
     private val dispatcherProvider: DispatcherProviders
 ) : FetchAllItemsInteractor {
+
     override fun invoke(): Flow<List<FoodItem>> {
         return itemRepository.fetchAllFoodItems().flowOn(dispatcherProvider.io)
     }
