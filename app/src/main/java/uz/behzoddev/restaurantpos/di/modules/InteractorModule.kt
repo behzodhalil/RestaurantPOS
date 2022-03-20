@@ -101,48 +101,48 @@ abstract class InteractorModule {
     @Binds
     @Singleton
     internal abstract fun provideFetchByBlended(
-        fetchByBlendedImpl: FetchByBlendedImpl
-    ) : FetchByBlended
+        fetchByBlendedImpl: FetchByBlendedInteractorImpl
+    ) : FetchByBlendedInteractor
 
     @Binds
     @Singleton
     internal abstract fun provideFetchByEspresso(
-        fetchByEspressoImpl: FetchByEspressoImpl
-    ) : FetchByEspresso
+        fetchByEspressoImpl: FetchByEspressoInteractorImpl
+    ) : FetchByEspressoInteractor
 
     @Binds
     @Singleton
     internal abstract fun provideFetchByBrood(
-        fetchByBroodImpl: FetchByBroodImpl
-    ): FetchByBrood
+        fetchByBroodInteractorImpl: FetchByBroodInteractorImpl
+    ): FetchByBroodInteractor
 
     @Binds
     @Singleton
     internal abstract fun provideFetchByColdBrew(
-        fetchByColdBrewImpl: FetchByColdBrewImpl
-    ): FetchByColdBrew
+        fetchByColdBrewInteractorImpl: FetchByColdBrewInteractorImpl
+    ): FetchByColdBrewInteractor
 
     @Binds
     @Singleton
     internal abstract fun provideFetchByFrappucino(
-        fetchByFrappucinoImpl: FetchByFrappucinoImpl
-    ): FetchByFrappucino
+        fetchByFrappucinoImpl: FetchByFrappucinoInteractorImpl
+    ): FetchByFrappucinoInteractor
 
     @Binds
     @Singleton
     internal abstract fun provideFetchByJuice(
-        fetchByJuiceImpl: FetchByJuiceImpl
-    ) : FetchByJuice
+        fetchByJuiceImpl: FetchByJuiceInteractorImpl
+    ) : FetchByJuiceInteractor
 
     @Binds
     @Singleton
     internal abstract fun provideFetchByTea(
-        fetchByTeaImpl: FetchByTeaImpl
-    ) : FetchByTea
+        fetchByTeaImpl: FetchByTeaInteractorImpl
+    ) : FetchByTeaInteractor
 
     @Binds
     @Singleton
     internal abstract fun provideFetchByPhysio(
-        fetchByPhysio: FetchByPhysioImpl
-    ): FetchByPhysio
+        fetchByPhysio: FetchByPhysioInteractorImpl
+    ): FetchByPhysioInteractor
 }
