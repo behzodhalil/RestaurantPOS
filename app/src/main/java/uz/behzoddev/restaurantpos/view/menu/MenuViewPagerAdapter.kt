@@ -4,14 +4,11 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
 const val COLD_BREW_COFFEE_INDEX = 0
-// const val BROOD_COFFEE_INDEX = 1
 const val ESPRESSO_INDEX = 1
 const val TEA_INDEX = 2
-/*const val FRAPPUCCINO_INDEX = 3
-const val BLENDED_INDEX = 4
-const val STARBUCKS_PHYSIO_INDEX = 5*/
-
-const val JUICE_INDEX = 7
+const val FRAPPUCCINO_INDEX = 3
+const val BROOD_INDEX = 4
+const val JUICE_INDEX = 5
 
 class MenuViewPagerAdapter(
     fragments: Fragment
