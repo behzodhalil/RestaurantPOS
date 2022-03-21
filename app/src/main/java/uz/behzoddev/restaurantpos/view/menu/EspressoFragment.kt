@@ -38,6 +38,9 @@ class EspressoFragment : BaseFragment<FragmentEspresssoBinding>() {
 
     private fun initRecyclerView() = with(binding) {
         espressoRecyclerView.adapter = espressoAdapter
+        // When you call that function, the size (with and height) of recycler view
+        // won’t change on the adapter insert/update/delete
+        espressoRecyclerView.setHasFixedSize(true)
     }
 
     private fun observerEspresso() = lifecycleScope.launchWhenCreated {
