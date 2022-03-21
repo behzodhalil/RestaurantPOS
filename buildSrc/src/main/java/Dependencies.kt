@@ -69,4 +69,10 @@ object Dependencies {
 
     // Pin Edit
     const val pinEdit = "com.github.poovamraj:PinEditTextField:${Versions.pinEditVersion}"
+
+    // Image Picker
+    const val imagePicker = "com.github.dhaval2404:imagepicker:${Versions.imagePickerVersion}"
+
+    // Glide
+    const val glide = "com.github.bumptech.glide:glide:${Versions.glideVersion}"
 }
