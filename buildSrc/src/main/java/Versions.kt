@@ -25,4 +25,6 @@ object Versions {
     const val passwordViewVersion = "1.4.4"
     const val expandableLayoutVersion = "1.4.1"
     const val pinEditVersion = "1.2.6"
+    const val imagePickerVersion = "2.1"
+    const val glideVersion = "4.13.0"
 }
