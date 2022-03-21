@@ -20,6 +20,20 @@ data class FoodItem(
     var foodItemCategory : String,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_PHOTO)
     var foodItemPhoto : String,
+    @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_SERVING_SIZE)
+    var foodServingSize: Int,
+    @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_SODIUM)
+    var foodSodium: Int,
+    @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_SATURATED_FAT)
+    var foodSaturatedFat: Int,
+    @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_SUGAR)
+    var foodSugar: Int,
+    @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_PROTEIN)
+    var foodProtein: Int,
+    @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_CAFFEINE)
+    var foodCaffeine: Int,
+    @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_ALLERGENS)
+    var foodAllergens: String,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_PAID)
     var foodItemIsPaid: Boolean = false,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_ID)
