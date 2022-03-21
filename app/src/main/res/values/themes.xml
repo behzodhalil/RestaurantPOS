@@ -36,6 +36,17 @@
         <item name="android:layout_marginEnd">@dimen/dimen_40dp</item>
     </style>
 
+    <style name="AdditionalEditText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="fontFamily">@font/noto_sans</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="boxCornerRadiusTopStart">@dimen/dimen_16dp</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/dimen_16dp</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/dimen_16dp</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/dimen_16dp</item>
+    </style>
+
     <style name="RoundedCornersDialog" parent="@style/Theme.MaterialComponents.Dialog">
         <item name="dialogCornerRadius">20dp</item>
     </style>
