@@ -56,7 +56,7 @@ class AddMenuCategoryFragment : BaseFragment<FragmentAddItemBinding>() {
         val price = it.tieMenuPrice.text.toString().toLong()
         val quantity = it.tieMenuQuantity.text.toString().toInt()
         val category = it.actCategory.text.toString()
-        val image = it.insertPhoto.toString()
+        val image = it.tilMenuPhoto.toString()
 
         return@fetchItems FoodItem(title,price,quantity,category,image)
     }
