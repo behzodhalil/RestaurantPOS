@@ -110,6 +110,16 @@ fun DependencyHandler.expandableLayout() {
 fun DependencyHandler.pinEdit() {
     implementation(Dependencies.pinEdit)
 }
+
+// Implementation function of Image Picker
+fun DependencyHandler.imagePicker() {
+    implementation(Dependencies.imagePicker)
+}
+
+// Implementation function of Glide
+fun DependencyHandler.glide() {
+    implementation(Dependencies.glide)
+}
 private fun DependencyHandler.implementation(depName: String) {
     add("implementation",depName)
 }
