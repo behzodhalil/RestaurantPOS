@@ -24,6 +24,15 @@ class MenuViewPagerAdapter(
         },
         TEA_INDEX to {
             TeaFragment()
+        },
+        FRAPPUCCINO_INDEX to {
+            FrappuccinoFragment()
+        },
+        BROOD_INDEX to {
+            BroodFragment()
+        },
+        JUICE_INDEX to {
+            JuiceFragment()
         }
     )
 
