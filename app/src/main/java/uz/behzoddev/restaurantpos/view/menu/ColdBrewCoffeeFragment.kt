@@ -38,6 +38,9 @@ class ColdBrewCoffeeFragment : BaseFragment<FragmentColdBrewCoffeeBinding>() {
 
     private fun initRecyclerView() = with(binding) {
         coldBrewRecyclerView.adapter = coldBrewAdapter
+        // When you call that function, the size (with and height) of recycler view
+        // won’t change on the adapter insert/update/delete
+        coldBrewRecyclerView.setHasFixedSize(true)
     }
 
     private fun observerColdBrew() = lifecycleScope.launchWhenCreated {
