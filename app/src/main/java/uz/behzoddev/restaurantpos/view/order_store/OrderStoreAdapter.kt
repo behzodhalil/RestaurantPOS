@@ -45,7 +45,8 @@ class OrderStoreAdapter @Inject constructor()  : RecyclerView.Adapter<OrderStore
             tvMenuPrice.text = foodMenuItem.foodItemPrice.toString()
             Glide.with(ivMenu)
                 .load(foodMenuItem.foodItemPrice)
-                .placeholder(R.drawable.ic_launcher_foreground)
+                .placeholder(R.drawable.iv_nitro)
+                .fitCenter()
                 .into(ivMenu)
         }
         holder.itemView.setOnClickListener {
