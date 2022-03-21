@@ -56,8 +56,15 @@ class AddMenuCategoryFragment : BaseFragment<FragmentAddItemBinding>() {
         val price = it.tieMenuPrice.text.toString().toLong()
         val quantity = it.tieMenuQuantity.text.toString().toInt()
         val category = it.actCategory.text.toString()
-        val image = it.tilMenuPhoto.toString()
+        val image = it.tieMenuPhoto.text.toString()
+        val servingSize = it.tieMenuServingSize.text.toString().toInt()
+        val sodium = it.tieMenuSodium.text.toString().toInt()
+        val saturatedFat = it.tieMenuSaturatedFat.text.toString().toInt()
+        val sugar = it.tieMenuSugar.text.toString().toInt()
+        val protein = it.tieMenuProtein.text.toString().toInt()
+        val caffeine = it.tieMenuCaffeine.text.toString().toInt()
+        val allergens = it.tieMenuAllergens.text.toString()
 
-        return@fetchItems FoodItem(title,price,quantity,category,image)
+        return@fetchItems FoodItem(title,price,quantity,category,image,servingSize,sodium,saturatedFat,sugar,protein,caffeine,allergens)
     }
 }
