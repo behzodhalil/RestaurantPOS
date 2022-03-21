@@ -19,6 +19,11 @@ android {
         versionCode = Configs.versionCodeVersion
         versionName = Configs.versionName
         testInstrumentationRunner = Configs.testInstrumentationRunnerName
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += mapOf("room.schemaLocation" to "$projectDir/schemas.")            }
+        }
     }
     buildFeatures {
         viewBinding = true
@@ -40,6 +45,11 @@ android {
     kotlinOptions {
         jvmTarget = ("1.8")
     }
+    sourceSets {
+        // Adds exported schema location as test app assets.
+        getByName("androidTest").assets.srcDir("$projectDir/schemas")
+    }
+
 
 }
 
