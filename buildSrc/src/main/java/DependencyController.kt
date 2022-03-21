@@ -44,6 +44,7 @@ fun DependencyHandler.room() {
     implementation(Dependencies.roomRuntime)
     implementation(Dependencies.roomKtx)
     kapt (Dependencies.roomKapt)
+    testImplementation(Dependencies.roomTest)
 }
 
 // Implementation function of Hilt
