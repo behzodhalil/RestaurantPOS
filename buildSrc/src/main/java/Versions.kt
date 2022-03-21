@@ -11,6 +11,7 @@ object Versions {
     const val kotlinVersion = "1.6.10"
     const val navigationVersion = "2.4.1"
     const val roomVersion = "2.4.1"
+    const val roomTestVersion = "2.4.2"
     const val hiltVersion = "2.40.5"
     const val coroutineVersion = "1.5.2"
     const val workVersion = "2.7.1"
