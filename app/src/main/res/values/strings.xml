@@ -15,8 +15,8 @@
     <string name="text_order_menu_type">메뉴 종류</string>
     <string name="text_order_quantity">수량</string>
     <string name="text_order_item_price">가격</string>
-    <string name="text_order_cancel">주문 취소</string>
-    <string name="text_order_complete">주문 왼료</string>
+    <string name="text_order_cancel">취소하기</string>
+    <string name="text_order_complete">주문하기</string>
 
     <!-- Order Confirm Texts -->
     <string name="text_order_confirm">주문 확인</string>
@@ -106,7 +106,7 @@
     <string name="text_menu_add_item_price">가격</string>
     <string name="text_menu_add_item_quantity">수량</string>
     <string name="text_menu_add_item_category">메뉴 종류</string>
-    <string name="text_menu_add_item_photo">Insert Photo</string>
+    <string name="text_menu_add_item_photo">사진 추가</string>
     <string name="text_menu_add_item_product_nutritional_information">제품 영양 정보</string>
     <string name="text_menu_add_item_serving_size">1회 제공량(kcal)</string>
     <string name="text_menu_add_item_sodium">나트륨(mg)</string>
@@ -152,6 +152,7 @@
     <string name="text_detail_caffeine_value">190</string>
     <string name="text_detail_allergens">알레르기 유발요인:</string>
     <string name="text_detail_allergens_value">우유</string>
+    <string name="text_order_text">주문하기</string>
 
 
 </resources>
