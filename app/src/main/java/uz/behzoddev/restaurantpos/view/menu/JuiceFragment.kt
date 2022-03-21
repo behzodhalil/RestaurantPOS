@@ -46,6 +46,7 @@ class JuiceFragment : BaseFragment<FragmentJuiceBinding>() {
     private fun observerJuice() = lifecycleScope.launchWhenCreated {
         juiceViewModel.juiceState.collect { result ->
             when(result) {
+                is ItemState.Loading -> {}
                 is ItemState.Empty -> {
 
                 }
