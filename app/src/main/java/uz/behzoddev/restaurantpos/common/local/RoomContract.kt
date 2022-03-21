@@ -15,6 +15,13 @@ object RoomContract {
         const val FOOD_ITEM_CATEGORY = "food_item_category"
         const val FOOD_ITEM_PHOTO = "food_item_photo"
         const val FOOD_ITEM_PAID = "food_item_is_paid"
+        const val FOOD_ITEM_SERVING_SIZE = "food_item_serving_size"
+        const val FOOD_ITEM_SODIUM = "food_item_sodium"
+        const val FOOD_ITEM_SATURATED_FAT = "food_item_saturated_fat"
+        const val FOOD_ITEM_SUGAR = "food_item_sugar"
+        const val FOOD_ITEM_PROTEIN = "food_item_protein"
+        const val FOOD_ITEM_CAFFEINE = "food_item_caffeine"
+        const val FOOD_ITEM_ALLERGENS = "food_item_allergens"
     }
     object FoodMenuContract {
         const val FOOD_MENU_TABLE = "food_menu_table"
