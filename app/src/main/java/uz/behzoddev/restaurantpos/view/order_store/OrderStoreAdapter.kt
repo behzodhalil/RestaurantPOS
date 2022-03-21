@@ -5,6 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import uz.behzoddev.restaurantpos.R
 import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 import uz.behzoddev.restaurantpos.databinding.ItemFoodBinding
 import javax.inject.Inject
@@ -41,6 +43,10 @@ class OrderStoreAdapter @Inject constructor()  : RecyclerView.Adapter<OrderStore
         holder.binding.apply {
             tvMenuName.text = foodMenuItem.foodItemName
             tvMenuPrice.text = foodMenuItem.foodItemPrice.toString()
+            Glide.with(ivMenu)
+                .load(foodMenuItem.foodItemPrice)
+                .placeholder(R.drawable.ic_launcher_foreground)
+                .into(ivMenu)
         }
         holder.itemView.setOnClickListener {
             onItemClickListener?.let { it(foodMenuItem) }
