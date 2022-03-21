@@ -65,4 +65,6 @@ dependencies {
     passwordView()
     expandableLayout()
     pinEdit()
+    imagePicker()
+    glide()
 }
