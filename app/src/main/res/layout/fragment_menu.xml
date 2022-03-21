@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.menu.MenuFragment"
-    >
+    tools:context=".view.menu.MenuFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,19 +26,25 @@
             android:id="@+id/tab_layout"
             style="@style/Widget.MaterialComponents.TabLayout"
             android:layout_width="0dp"
-            android:layout_height="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_140dp"
+            android:layout_marginTop="@dimen/dimen_200dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tabTextAppearance="@style/TableLayout"
-            android:layout_marginTop="@dimen/dimen_150dp"
+            app:tabBackground="@drawable/bg_table_layout"
+            app:tabIndicator="@color/royal_blue"
             app:tabMode="auto"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/TableLayout"
             app:tabUnboundedRipple="true" />
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager"
             android:layout_width="0dp"
             android:layout_height="1200dp"
+            android:layout_marginTop="@dimen/dimen_50dp"
             android:clipToPadding="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -47,5 +52,36 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tab_layout"
             app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/dimen_450dp"
+            android:layout_height="@dimen/dimen_140dp"
+            android:layout_marginStart="@dimen/dimen_60dp"
+            android:layout_marginBottom="@dimen/dimen_40dp"
+            android:backgroundTint="@color/cornflower_blue"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/text_order_cancel"
+            android:textSize="@dimen/font_size_50sp"
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/dimen_40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_order"
+            android:layout_width="@dimen/dimen_450dp"
+            android:layout_height="@dimen/dimen_140dp"
+            android:layout_marginStart="@dimen/dimen_30dp"
+            android:layout_marginBottom="@dimen/dimen_40dp"
+            android:backgroundTint="@color/cornflower_blue"
+            android:fontFamily="@font/noto_sans"
+            android:text="@string/text_order_complete"
+            android:textSize="@dimen/font_size_50sp"
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/dimen_40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_cancel" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
