@@ -4,19 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="@dimen/dimen_20dp"
+    android:layout_marginTop="@dimen/dimen_50dp"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/insert_photo"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_250dp"
-        android:layout_marginStart="@dimen/dimen_40dp"
-        android:layout_marginEnd="@dimen/dimen_40dp"
-        android:layout_marginBottom="@dimen/dimen_20dp"
-        android:contentDescription="@string/text_menu_add_item_photo"
-        android:padding="@dimen/dimen_50dp"
-        android:src="@drawable/ic_photo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_menu_photo"
