@@ -23,7 +23,6 @@ class MenuFragment : BaseFragment<FragmentMenuBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding.viewPager.adapter = MenuViewPagerAdapter(this)
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             tab.text = getTabTitle(position)
