@@ -145,4 +145,10 @@ abstract class InteractorModule {
     internal abstract fun provideFetchByPhysio(
         fetchByPhysio: FetchByPhysioInteractorImpl
     ): FetchByPhysioInteractor
+
+    @Binds
+    @Singleton
+    internal abstract fun provideFetchById(
+        fetchByIdInteractorImpl: FetchByIdInteractorImpl
+    ): FetchByIdInteractor
 }
