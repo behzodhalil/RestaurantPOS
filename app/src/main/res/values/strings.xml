@@ -141,6 +141,7 @@
 
     <!-- Detail Item Texts -->
     <string name="text_detail_photo">Detail Photo</string>
+    <string name="text_detail_confirm">확인</string>
     <string name="text_detail_title">콜드 브루 플로트</string>
     <string name="text_detail_title_eng">Cold Brew Float</string>
     <string name="text_detail_description">[리저브 전용음료] 리저브 콜드 브루 위에 녹아 내리는 한 스쿱의 바닐라 아이스크림</string>
