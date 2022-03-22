@@ -45,4 +45,6 @@ interface FoodItemDao {
     fun fetchByTea(): Flow<List<FoodItem>>
     @Query("SELECT * FROM food_item_table WHERE food_item_category = '$JUICE' ORDER BY food_item_name ")
     fun fetchByJuice(): Flow<List<FoodItem>>
+    @Query("SELECT * FROM food_item_table WHERE food_item_id =:id")
+    fun fetchById(id: Int): Flow<FoodItem>
 }
