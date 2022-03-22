@@ -17,4 +17,5 @@ interface ItemDataSource {
     fun fetchByPhysio(): Flow<List<FoodItem>>
     fun fetchByTea(): Flow<List<FoodItem>>
     fun fetchByJuice(): Flow<List<FoodItem>>
+    fun fetchById(id: Int): Flow<FoodItem>
 }

@@ -59,4 +59,8 @@ class ItemDataSourceImpl @Inject constructor(
     override fun fetchByJuice(): Flow<List<FoodItem>> {
         return itemDao.fetchByJuice()
     }
+
+    override fun fetchById(id: Int): Flow<FoodItem> {
+        return itemDao.fetchById(id)
+    }
 }
