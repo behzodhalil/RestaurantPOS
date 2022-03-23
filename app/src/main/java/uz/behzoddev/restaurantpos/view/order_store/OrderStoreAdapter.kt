@@ -52,6 +52,9 @@ class OrderStoreAdapter @Inject constructor()  : RecyclerView.Adapter<OrderStore
         holder.itemView.setOnClickListener {
             onItemClickListener?.let { it(foodMenuItem) }
         }
+        holder.binding.ivDetail.setOnClickListener {
+            onDetailItemClickListener?.let { it(foodMenuItem) }
+        }
     }
 
     private var onItemClickListener: ((FoodItem) -> Unit)? = null
@@ -60,6 +63,11 @@ class OrderStoreAdapter @Inject constructor()  : RecyclerView.Adapter<OrderStore
         onItemClickListener = listener
     }
 
+    private var onDetailItemClickListener: ((FoodItem) -> Unit)? = null
+
+    fun setDetailClickListener(listener: (FoodItem) -> Unit) {
+        onDetailItemClickListener = listener
+    }
     override fun getItemCount(): Int {
         return diffUtil.currentList.size
     }
