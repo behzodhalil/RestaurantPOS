@@ -12,7 +12,7 @@ class FetchByIdInteractorImpl @Inject constructor(
     private val dispatcherProviders: DispatcherProviders
 ) : FetchByIdInteractor {
 
-    override fun invoke(id: Int): Flow<FoodItem> {
+    override fun invoke(id: Long): Flow<FoodItem> {
         return itemRepository.fetchById(id).flowOn(dispatcherProviders.io)
     }
 }

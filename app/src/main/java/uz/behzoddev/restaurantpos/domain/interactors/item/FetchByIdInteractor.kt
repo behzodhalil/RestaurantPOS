@@ -4,5 +4,5 @@ import kotlinx.coroutines.flow.Flow
 import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 
 interface FetchByIdInteractor {
-    operator fun invoke(id: Int): Flow<FoodItem>
+    operator fun invoke(id: Long): Flow<FoodItem>
 }
