@@ -62,8 +62,11 @@ class ItemRepositoryImpl @Inject constructor(
         return itemDataSource.fetchByJuice()
     }
 
-    override fun fetchById(id: Int): Flow<FoodItem> {
+    override fun fetchById(id: Long): Flow<FoodItem> {
         return itemDataSource.fetchById(id)
     }
 
+    override suspend fun saveAllFoods(list: List<FoodItem>) {
+        return itemDataSource.saveAllFoods(list)
+    }
 }
