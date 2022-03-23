@@ -12,6 +12,10 @@ class ItemDataSourceImpl @Inject constructor(
         return itemDao.saveFoodItem(foodItem)
     }
 
+    override suspend fun saveAllFoods(list: List<FoodItem>) {
+        return itemDao.saveAllFoods(list)
+    }
+
     override suspend fun updateFoodItem(foodItem: FoodItem): Int {
         return itemDao.updateFoodItem(foodItem)
     }
@@ -60,7 +64,7 @@ class ItemDataSourceImpl @Inject constructor(
         return itemDao.fetchByJuice()
     }
 
-    override fun fetchById(id: Int): Flow<FoodItem> {
+    override fun fetchById(id: Long): Flow<FoodItem> {
         return itemDao.fetchById(id)
     }
 }

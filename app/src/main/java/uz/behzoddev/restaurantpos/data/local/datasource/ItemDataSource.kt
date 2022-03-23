@@ -5,6 +5,7 @@ import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 
 interface ItemDataSource {
     suspend fun insertFoodItem(foodItem: FoodItem): Long
+    suspend fun saveAllFoods(list: List<FoodItem>)
     suspend fun updateFoodItem(foodItem: FoodItem): Int
     suspend fun deleteFoodItem(foodItem: FoodItem): Int
     fun fetchAllFoodItems(): Flow<List<FoodItem>>
@@ -17,5 +18,5 @@ interface ItemDataSource {
     fun fetchByPhysio(): Flow<List<FoodItem>>
     fun fetchByTea(): Flow<List<FoodItem>>
     fun fetchByJuice(): Flow<List<FoodItem>>
-    fun fetchById(id: Int): Flow<FoodItem>
+    fun fetchById(id: Long): Flow<FoodItem>
 }
