@@ -40,8 +40,17 @@ class MenuManagementFragment : BaseFragment<FragmentMenuManagementBinding>() {
         deleteItem()
         observerMenuManagement()
         onNavigateToAddMenu()
+        onDetailClick()
     }
 
+    private fun onDetailClick() {
+        menuManagementAdapter.setOnClickListener {
+            val bundle = Bundle().apply {
+                putParcelable("food_item",it)
+            }
+            findNavController().navigate(R.id.action_menuManagementFragment_to_detailFragment,bundle)
+        }
+    }
     private fun setupRecyclerView() = with(binding) {
         val menuManagementRV = layoutMenuManagement.recyclerViewMenuManagement
         menuManagementRV.adapter = menuManagementAdapter
