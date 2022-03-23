@@ -46,6 +46,9 @@
         <action
             android:id="@+id/actionMenuManagementFragmentToAddMenuCategoryFragment"
             app:destination="@id/addMenuCategoryFragment" />
+        <action
+            android:id="@+id/action_menuManagementFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
     <fragment
         android:id="@+id/optionSettingsFragment"
@@ -56,7 +59,11 @@
         android:id="@+id/orderStoreFragment"
         android:name="uz.behzoddev.restaurantpos.view.order_store.OrderStoreFragment"
         android:label="fragment_order_store"
-        tools:layout="@layout/fragment_order_store" />
+        tools:layout="@layout/fragment_order_store" >
+        <action
+            android:id="@+id/actionOrderStoreFragmentToDetailConfirmFragment"
+            app:destination="@id/detailConfirmFragment" />
+    </fragment>
     <fragment
         android:id="@+id/orderTakeOutFragment"
         android:name="uz.behzoddev.restaurantpos.view.order_take_out.OrderTakeOutFragment"
@@ -91,5 +98,39 @@
         android:id="@+id/menuFragment"
         android:name="uz.behzoddev.restaurantpos.view.menu.MenuFragment"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" />
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/actionMenuFragmentToDetailConfirmFragment"
+            app:destination="@id/detailConfirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailConfirmFragment"
+        android:name="uz.behzoddev.restaurantpos.view.detail.DetailConfirmFragment"
+        android:label="fragment_item_detail_confirm"
+        tools:layout="@layout/fragment_item_detail_confirm" >
+        <argument
+            android:name="food_item"
+            app:argType="uz.behzoddev.restaurantpos.data.local.models.FoodItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/coldBrewCoffeeFragment"
+        android:name="uz.behzoddev.restaurantpos.view.menu.ColdBrewCoffeeFragment"
+        android:label="fragment_cold_brew_coffee"
+        tools:layout="@layout/fragment_cold_brew_coffee" >
+        <action
+            android:id="@+id/action_coldBrewCoffeeFragment_to_detailConfirmFragment"
+            app:destination="@id/detailConfirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="uz.behzoddev.restaurantpos.view.detail.DetailFragment"
+        android:label="fragment_item_detail"
+        tools:layout="@layout/fragment_item_detail" >
+        <argument
+            android:name="food_item"
+            app:argType="uz.behzoddev.restaurantpos.data.local.models.FoodItem" />
+        <action
+            android:id="@+id/action_detailFragment_to_menuManagementFragment"
+            app:destination="@id/menuManagementFragment" />
+    </fragment>
 </navigation>
