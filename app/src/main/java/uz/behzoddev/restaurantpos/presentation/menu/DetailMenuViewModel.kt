@@ -20,7 +20,7 @@ class DetailMenuViewModel @Inject constructor(
     private var _detailState = MutableStateFlow<DetailState>(DetailState.Loading)
     val detailState: StateFlow<DetailState> get() = _detailState
 
-    fun fetchById(id: Int) = viewModelScope.launch {
+    fun fetchById(id: Long) = viewModelScope.launch {
         _detailState.value = DetailState.Loading
         fetchByIdInteractor.invoke(id).collect { result: FoodItem? ->
             if (result != null) {
