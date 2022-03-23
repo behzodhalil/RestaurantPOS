@@ -9,6 +9,8 @@ object RoomContract {
         const val FOOD_ITEM_TABLE = "food_item_table"
         const val FOOD_ITEM_ID = "food_item_id"
         const val FOOD_ITEM_NAME = "food_item_name"
+        const val FOOD_ITEM_NAME_ENGLISH = "food_item_name_english"
+        const val FOOD_ITEM_DESCRIPTION = "food_item_description"
         const val FOOD_ITEM_PRICE = "food_item_price"
         const val FOOD_ITEM_SUB_COUNT = "food_item_sub_count"
         const val FOOD_ITEM_TOTAL_COUNT = "food_item_total_count"
