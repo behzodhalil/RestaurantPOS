@@ -53,6 +53,8 @@ class AddMenuCategoryFragment : BaseFragment<FragmentAddItemBinding>() {
     }
     private fun fetchItems(): FoodItem = binding.layoutMenuAddItem.let {
         val title = it.tieMenuName.text.toString()
+        val titleEng = it.tieMenuNameEnglish.text.toString()
+        val description = it.tieMenuDescription.text.toString()
         val price = it.tieMenuPrice.text.toString().toLong()
         val quantity = it.tieMenuQuantity.text.toString().toInt()
         val category = it.actCategory.text.toString()
@@ -65,6 +67,6 @@ class AddMenuCategoryFragment : BaseFragment<FragmentAddItemBinding>() {
         val caffeine = it.tieMenuCaffeine.text.toString().toInt()
         val allergens = it.tieMenuAllergens.text.toString()
 
-        return@fetchItems FoodItem(title,price,quantity,category,image,servingSize,sodium,saturatedFat,sugar,protein,caffeine,allergens)
+        return@fetchItems FoodItem(title,titleEng,description,price,quantity,category,image,servingSize,sodium,saturatedFat,sugar,protein,caffeine,allergens)
     }
 }
