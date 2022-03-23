@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="@dimen/dimen_50dp"
+    android:layout_marginTop="@dimen/dimen_20dp"
     android:orientation="vertical">
 
 
@@ -13,6 +13,7 @@
         style="@style/PrimaryEditText"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_100dp"
+        android:layout_marginTop="@dimen/dimen_50dp"
         android:backgroundTint="@color/milk"
         android:hint="@string/text_menu_add_item_photo">
 
@@ -39,6 +40,45 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_100dp"
             android:background="@color/milk"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="text"
+            android:textSize="@dimen/font_size_30sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_menu_name_english"
+        style="@style/PrimaryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"
+        android:backgroundTint="@color/milk"
+        android:hint="@string/text_menu_add_title_english">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_menu_name_english"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100dp"
+            android:background="@color/milk"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:fontFamily="@font/noto_sans"
+            android:inputType="text"
+            android:textSize="@dimen/font_size_30sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_menu_description"
+        style="@style/PrimaryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"
+        android:backgroundTint="@color/milk"
+        android:hint="@string/text_menu_add_description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_menu_description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100dp"
+            android:background="@color/milk"
+            android:layout_marginTop="@dimen/dimen_20dp"
             android:fontFamily="@font/noto_sans"
             android:inputType="text"
             android:textSize="@dimen/font_size_30sp" />
@@ -118,7 +158,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_40dp"
-        android:layout_marginTop="@dimen/dimen_80dp"
+        android:layout_marginTop="@dimen/dimen_40dp"
         android:fontFamily="@font/noto_sans"
         android:text="@string/text_detail_nutritional_information"
         android:textColor="@color/cod_gray"

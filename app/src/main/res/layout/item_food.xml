@@ -2,9 +2,10 @@
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="@dimen/dimen_300dp"
+    android:layout_width="@dimen/dimen_350dp"
     android:layout_height="@dimen/dimen_400dp"
     android:layout_marginTop="@dimen/dimen_20dp"
+    android:layout_marginStart="@dimen/dimen_20dp"
     app:cardCornerRadius="@dimen/dimen_20dp"
     app:cardElevation="@dimen/dimen_1dp"
     app:cardPreventCornerOverlap="true">
@@ -18,12 +19,12 @@
 
         <ImageView
             android:id="@+id/iv_menu"
-            android:layout_width="300dp"
-            android:layout_height="350dp"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/ic_launcher_background"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,9 +33,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_20dp"
-            android:layout_marginTop="@dimen/dimen_8dp"
-            android:textSize="50sp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:textSize="35sp"
             android:textStyle="bold"
+            android:maxLength="10"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.416"
             app:layout_constraintStart_toStartOf="parent"
@@ -65,13 +67,16 @@
             tools:text="4000원" />
 
         <ImageView
-            android:layout_width="@dimen/dimen_40dp"
-            android:layout_height="48dp"
+            android:id="@+id/iv_detail"
+            android:layout_width="@dimen/dimen_48dp"
+            android:layout_height="75dp"
             android:layout_marginTop="@dimen/dimen_20dp"
             android:src="@drawable/ic_food_information"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/tv_menu_price"
             app:layout_constraintTop_toBottomOf="@id/tv_menu_name"
+            android:clickable="true"
+            android:focusable="true"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -36,6 +36,8 @@
             app:tabBackground="@drawable/bg_table_layout"
             app:tabIndicator="@color/royal_blue"
             app:tabMode="auto"
+            android:layout_marginStart="@dimen/dimen_30dp"
+            android:layout_marginEnd="@dimen/dimen_30dp"
             app:tabSelectedTextColor="@color/white"
             app:tabTextAppearance="@style/TableLayout"
             app:tabUnboundedRipple="true" />
@@ -43,7 +45,7 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager"
             android:layout_width="0dp"
-            android:layout_height="1200dp"
+            android:layout_height="900dp"
             android:layout_marginTop="@dimen/dimen_50dp"
             android:clipToPadding="false"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -72,7 +74,7 @@
             android:id="@+id/btn_order"
             android:layout_width="@dimen/dimen_450dp"
             android:layout_height="@dimen/dimen_140dp"
-            android:layout_marginStart="@dimen/dimen_30dp"
+            android:layout_marginStart="@dimen/dimen_70dp"
             android:layout_marginBottom="@dimen/dimen_40dp"
             android:backgroundTint="@color/cornflower_blue"
             android:fontFamily="@font/noto_sans"

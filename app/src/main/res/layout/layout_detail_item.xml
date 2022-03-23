@@ -140,7 +140,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_saturated_fat"
+            android:id="@+id/tv_detail_saturated_fat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_120dp"
@@ -160,7 +160,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_protein"
+            android:id="@+id/tv_detail_protein"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_80dp"
@@ -187,7 +187,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_sugar"
+            android:id="@+id/tv_detail_sugar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_170dp"
@@ -207,7 +207,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_caffeine"
+            android:id="@+id/tv_detail_caffeine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_80dp"
@@ -234,7 +234,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_allergen"
+            android:id="@+id/tv_detail_allergen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dimen_20dp"
