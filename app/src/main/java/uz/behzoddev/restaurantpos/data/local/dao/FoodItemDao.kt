@@ -21,6 +21,8 @@ import uz.behzoddev.restaurantpos.utils.CoffeeCategory.TEA
 interface FoodItemDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveFoodItem(foodItem: FoodItem): Long
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun saveAllFoods(lists: List<FoodItem>)
     @Update(onConflict = OnConflictStrategy.REPLACE)
     suspend fun updateFoodItem(foodItem: FoodItem): Int
     @Delete
@@ -46,5 +48,5 @@ interface FoodItemDao {
     @Query("SELECT * FROM food_item_table WHERE food_item_category = '$JUICE' ORDER BY food_item_name ")
     fun fetchByJuice(): Flow<List<FoodItem>>
     @Query("SELECT * FROM food_item_table WHERE food_item_id =:id")
-    fun fetchById(id: Int): Flow<FoodItem>
+    fun fetchById(id: Long): Flow<FoodItem>
 }
