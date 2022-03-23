@@ -103,6 +103,8 @@
     <string name="text_menu_add">메뉴 추가</string>
     <string name="text_menu_update">메뉴 수정</string>
     <string name="text_menu_add_title">메뉴명</string>
+    <string name="text_menu_add_title_english">영어 메뉴명</string>
+    <string name="text_menu_add_description">설명</string>
     <string name="text_menu_add_item_price">가격</string>
     <string name="text_menu_add_item_quantity">수량</string>
     <string name="text_menu_add_item_category">메뉴 종류</string>
@@ -142,6 +144,7 @@
     <!-- Detail Item Texts -->
     <string name="text_detail_photo">Detail Photo</string>
     <string name="text_detail_confirm">확인</string>
+    <string name="text_detail_back">뒤로</string>
     <string name="text_detail_title">콜드 브루 플로트</string>
     <string name="text_detail_title_eng">Cold Brew Float</string>
     <string name="text_detail_description">[리저브 전용음료] 리저브 콜드 브루 위에 녹아 내리는 한 스쿱의 바닐라 아이스크림</string>
