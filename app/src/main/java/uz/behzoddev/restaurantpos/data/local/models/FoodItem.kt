@@ -12,6 +12,10 @@ import uz.behzoddev.restaurantpos.common.local.RoomContract
 data class FoodItem(
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_NAME)
     var foodItemName : String,
+    @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_NAME_ENGLISH)
+    var foodItemNameEnglish: String,
+    @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_DESCRIPTION, defaultValue = "")
+    var foodItemDescription: String,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_PRICE)
     var foodItemPrice : Long,
     @ColumnInfo(name = RoomContract.FoodItemContract.FOOD_ITEM_SUB_COUNT)
@@ -40,3 +44,5 @@ data class FoodItem(
     @PrimaryKey(autoGenerate = true)
     var foodItemId : Long = 0
 ) : Parcelable
+
+// https://proandroiddev.com/serializable-or-parcelable-why-and-which-one-17b274f3d3bb
