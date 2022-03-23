@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
+import uz.behzoddev.restaurantpos.R
 import uz.behzoddev.restaurantpos.common.base.BaseFragment
 import uz.behzoddev.restaurantpos.common.states.ItemState
 import uz.behzoddev.restaurantpos.data.local.models.FoodItem
@@ -34,6 +36,7 @@ class ColdBrewCoffeeFragment : BaseFragment<FragmentColdBrewCoffeeBinding>() {
         super.onViewCreated(view, savedInstanceState)
         initRecyclerView()
         observerColdBrew()
+        onClickColdBrew()
     }
 
     private fun initRecyclerView() = with(binding) {
@@ -43,6 +46,14 @@ class ColdBrewCoffeeFragment : BaseFragment<FragmentColdBrewCoffeeBinding>() {
         coldBrewRecyclerView.setHasFixedSize(true)
     }
 
+    private fun onClickColdBrew() {
+        coldBrewAdapter.setDetailClickListener {
+            val bundle = Bundle().apply {
+                putParcelable("food_item",it)
+            }
+            findNavController().navigate(R.id.actionMenuFragmentToDetailConfirmFragment,bundle)
+        }
+    }
     private fun observerColdBrew() = lifecycleScope.launchWhenCreated {
         coldBrewViewModel.coldBrewState.collect { result ->
             when(result) {
