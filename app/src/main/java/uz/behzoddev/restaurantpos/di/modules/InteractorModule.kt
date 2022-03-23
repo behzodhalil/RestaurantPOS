@@ -151,4 +151,10 @@ abstract class InteractorModule {
     internal abstract fun provideFetchById(
         fetchByIdInteractorImpl: FetchByIdInteractorImpl
     ): FetchByIdInteractor
+
+    @Binds
+    @Singleton
+    internal abstract fun provideSaveAllFoods(
+        saveAllFoodsInteractor: SaveAllFoodsInteractorImpl
+    ): SaveAllFoodsInteractor
 }
