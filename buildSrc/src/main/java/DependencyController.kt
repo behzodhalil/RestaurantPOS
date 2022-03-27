@@ -121,6 +121,12 @@ fun DependencyHandler.imagePicker() {
 fun DependencyHandler.glide() {
     implementation(Dependencies.glide)
 }
+
+// Implementation function of WorkManager with Hilt
+fun DependencyHandler.workManagerWithHilt() {
+    implementation(Dependencies.workManagerWithHilt)
+}
+
 private fun DependencyHandler.implementation(depName: String) {
     add("implementation",depName)
 }
