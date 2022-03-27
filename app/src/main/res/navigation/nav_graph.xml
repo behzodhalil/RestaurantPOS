@@ -108,6 +108,10 @@
         android:name="uz.behzoddev.restaurantpos.view.detail.DetailConfirmFragment"
         android:label="fragment_item_detail_confirm"
         tools:layout="@layout/fragment_item_detail_confirm" >
+        <action
+            android:id="@+id/actionDetailConfirmToMenu"
+            app:destination="@+id/menuFragment"
+            />
         <argument
             android:name="food_item"
             app:argType="uz.behzoddev.restaurantpos.data.local.models.FoodItem" />
