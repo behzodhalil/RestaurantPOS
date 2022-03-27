@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
@@ -32,12 +33,19 @@ class DetailConfirmFragment : BaseFragment<FragmentItemDetailConfirmBinding>() {
         super.onViewCreated(view, savedInstanceState)
         fetchById(args.foodItem.foodItemId)
         observeDetail()
+        onNavigationToMenu()
     }
 
     private fun fetchById(id: Long) {
         detailConfirmViewModel.fetchById(id)
     }
 
+    private fun onNavigationToMenu() = with(binding) {
+        btnConfirm.setOnClickListener {
+            val actionDetailConfirmToMenu = DetailConfirmFragmentDirections.actionDetailConfirmToMenu()
+            findNavController().navigate(actionDetailConfirmToMenu)
+        }
+    }
     private fun observeDetail() = lifecycleScope.launchWhenCreated {
         detailConfirmViewModel.detailState.collect { result ->
             when (result) {
@@ -62,7 +70,7 @@ class DetailConfirmFragment : BaseFragment<FragmentItemDetailConfirmBinding>() {
         tvDetailProtein.text = foodItem.foodProtein.toString()
         tvDetailSugar.text = foodItem.foodSugar.toString()
         tvDetailCaffeine.text = foodItem.foodCaffeine.toString()
-        tvDetailAllergen.text = foodItem.foodAllergens.toString()
+        tvDetailAllergen.text = foodItem.foodAllergens
     }
 
 }
