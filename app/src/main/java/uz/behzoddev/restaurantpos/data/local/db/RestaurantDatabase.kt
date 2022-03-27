@@ -20,9 +20,9 @@ import uz.behzoddev.restaurantpos.data.worker.RestaurantWorker
 
 @Database(
     entities = [FoodStore::class, FoodMenu::class, FoodItem::class],
-    version = 5,
+    version = 8,
     autoMigrations = [
-        AutoMigration(from = 4, to = 5)
+        AutoMigration(from = 7, to = 8)
     ],
     exportSchema = true
 )
@@ -45,7 +45,7 @@ abstract class RestaurantDatabase : RoomDatabase() {
             context.applicationContext,
             RestaurantDatabase::class.java,
             RoomContract.DATABASE_NAME
-        ).addCallback(object: RoomDatabase.Callback() {
+        ).addCallback(object : RoomDatabase.Callback() {
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
                 val request = OneTimeWorkRequestBuilder<RestaurantWorker>().build()
