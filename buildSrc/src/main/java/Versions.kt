@@ -28,4 +28,6 @@ object Versions {
     const val pinEditVersion = "1.2.6"
     const val imagePickerVersion = "2.1"
     const val glideVersion = "4.13.0"
+    const val workManagerWithHiltVersion = "1.0.0-alpha02"
+
 }
