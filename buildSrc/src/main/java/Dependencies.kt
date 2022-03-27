@@ -76,4 +76,8 @@ object Dependencies {
 
     // Glide
     const val glide = "com.github.bumptech.glide:glide:${Versions.glideVersion}"
+
+    // WorkManager with Hilt
+    const val workManagerWithHilt = "androidx.hilt:hilt-work:${Versions.workManagerWithHiltVersion}"
+
 }
