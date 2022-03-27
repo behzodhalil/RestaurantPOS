@@ -97,7 +97,8 @@ class MenuManagementFragment : BaseFragment<FragmentMenuManagementBinding>() {
     }
     private fun onNavigateToAddMenu() = with(binding) {
         btnInsert.setOnClickListener {
-            findNavController().navigate(R.id.actionMenuManagementFragmentToAddMenuCategoryFragment)
+            val actionMenuManagementToAddMenu = MenuManagementFragmentDirections.actionMenuManagementFragmentToAddMenuCategoryFragment()
+            findNavController().navigate(actionMenuManagementToAddMenu)
         }
     }
 }
