@@ -50,7 +50,6 @@ android {
         getByName("androidTest").assets.srcDir("$projectDir/schemas")
     }
 
-
 }
 
 dependencies {
@@ -77,4 +76,5 @@ dependencies {
     pinEdit()
     imagePicker()
     glide()
+    workManagerWithHilt()
 }
