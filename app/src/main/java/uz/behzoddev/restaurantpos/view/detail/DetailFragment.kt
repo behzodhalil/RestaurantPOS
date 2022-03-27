@@ -43,7 +43,8 @@ class DetailFragment : BaseFragment<FragmentItemDetailBinding>() {
 
     private fun onNavigationMenuManagement() {
         binding.btnBack.setOnClickListener {
-            findNavController().navigate(R.id.action_detailFragment_to_menuManagementFragment)
+            val actionDetailToMenu = DetailFragmentDirections.actionDetailFragmentToMenuManagementFragment()
+            findNavController().navigate(actionDetailToMenu)
         }
     }
     private fun observeDetail() = lifecycleScope.launchWhenCreated {
