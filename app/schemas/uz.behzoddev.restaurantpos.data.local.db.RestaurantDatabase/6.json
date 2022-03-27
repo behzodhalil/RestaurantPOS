@@ -1,0 +1,201 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 6,
+    "identityHash": "874d1d510b094566b56d4864ec55db0a",
+    "entities": [
+      {
+        "tableName": "food_store_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`food_store_branch_name` TEXT NOT NULL, `food_store_owner_name` TEXT NOT NULL, `food_store_phone_number` INTEGER NOT NULL, `food_store_address` TEXT NOT NULL, `food_store_id` INTEGER NOT NULL, PRIMARY KEY(`food_store_id`))",
+        "fields": [
+          {
+            "fieldPath": "foodStoreBranchName",
+            "columnName": "food_store_branch_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodStoreOwnerName",
+            "columnName": "food_store_owner_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodStorePhoneNumber",
+            "columnName": "food_store_phone_number",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodStoreAddress",
+            "columnName": "food_store_address",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodStoreId",
+            "columnName": "food_store_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "food_store_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "food_menu_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`food_menu_name` TEXT NOT NULL, `food_menu_desc` TEXT NOT NULL, `food_menu_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "foodMenuCategoryName",
+            "columnName": "food_menu_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodMenuCategoryDesc",
+            "columnName": "food_menu_desc",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodMenuId",
+            "columnName": "food_menu_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "food_menu_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "food_item_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`food_item_name` TEXT NOT NULL, `food_item_name_english` TEXT NOT NULL, `food_item_description` TEXT NOT NULL DEFAULT '', `food_item_price` INTEGER NOT NULL, `food_item_sub_count` INTEGER NOT NULL, `food_item_category` TEXT NOT NULL, `food_item_photo` TEXT NOT NULL, `food_item_serving_size` INTEGER NOT NULL, `food_item_sodium` INTEGER NOT NULL, `food_item_saturated_fat` INTEGER NOT NULL, `food_item_sugar` INTEGER NOT NULL, `food_item_protein` INTEGER NOT NULL, `food_item_caffeine` INTEGER NOT NULL, `food_item_allergens` TEXT NOT NULL, `food_item_is_paid` INTEGER NOT NULL, `food_item_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "foodItemName",
+            "columnName": "food_item_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodItemNameEnglish",
+            "columnName": "food_item_name_english",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodItemDescription",
+            "columnName": "food_item_description",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "''"
+          },
+          {
+            "fieldPath": "foodItemPrice",
+            "columnName": "food_item_price",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodItemSubCount",
+            "columnName": "food_item_sub_count",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodItemCategory",
+            "columnName": "food_item_category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodItemPhoto",
+            "columnName": "food_item_photo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodServingSize",
+            "columnName": "food_item_serving_size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodSodium",
+            "columnName": "food_item_sodium",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodSaturatedFat",
+            "columnName": "food_item_saturated_fat",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodSugar",
+            "columnName": "food_item_sugar",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodProtein",
+            "columnName": "food_item_protein",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodCaffeine",
+            "columnName": "food_item_caffeine",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodAllergens",
+            "columnName": "food_item_allergens",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodItemIsPaid",
+            "columnName": "food_item_is_paid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "foodItemId",
+            "columnName": "food_item_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "food_item_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '874d1d510b094566b56d4864ec55db0a')"
+    ]
+  }
+}
