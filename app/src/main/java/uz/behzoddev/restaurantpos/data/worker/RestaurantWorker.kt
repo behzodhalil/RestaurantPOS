@@ -237,6 +237,7 @@ class RestaurantWorker @WorkerInject constructor(
         }
     }
 
+    /*
     private fun fetchItemsFromRaw(): ArrayList<FoodItem> {
         val items = ArrayList<FoodItem>()
         val reader =
@@ -292,6 +293,8 @@ class RestaurantWorker @WorkerInject constructor(
         }
         return items
     }
+
+     */
 }
 
 
