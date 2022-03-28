@@ -1,12 +1,14 @@
 package uz.behzoddev.restaurantpos.di.modules
 
 import android.app.Application
+import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import uz.behzoddev.restaurantpos.data.local.dao.FoodItemDao
 import uz.behzoddev.restaurantpos.data.local.dao.FoodMenuDao
+import uz.behzoddev.restaurantpos.data.local.dao.FoodOrderDao
 import uz.behzoddev.restaurantpos.data.local.dao.FoodStoreDao
 import uz.behzoddev.restaurantpos.data.local.db.RestaurantDatabase
 import javax.inject.Named
@@ -33,7 +35,19 @@ object DatabaseModule {
     }
     @Provides
     @Singleton
-    fun provideStoreDaoInstance(database: RestaurantDatabase) : FoodStoreDao{
+    fun provideStoreDaoInstance(database: RestaurantDatabase) : FoodStoreDao {
         return database.getStoreDao()
+    }
+
+    @Provides
+    @Singleton
+    fun provideOrderDaoInstance(database: RestaurantDatabase): FoodOrderDao {
+        return database.getOrderDao()
+    }
+
+    @Provides
+    @Singleton
+    fun provideGson(): Gson {
+        return Gson()
     }
 }
