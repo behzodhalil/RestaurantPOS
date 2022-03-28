@@ -127,6 +127,10 @@ fun DependencyHandler.workManagerWithHilt() {
     implementation(Dependencies.workManagerWithHilt)
 }
 
+// Implementation function of Gson
+fun DependencyHandler.gson() {
+    implementation(Dependencies.gson)
+}
 private fun DependencyHandler.implementation(depName: String) {
     add("implementation",depName)
 }
