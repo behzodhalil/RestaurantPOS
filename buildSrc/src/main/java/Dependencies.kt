@@ -80,4 +80,6 @@ object Dependencies {
     // WorkManager with Hilt
     const val workManagerWithHilt = "androidx.hilt:hilt-work:${Versions.workManagerWithHiltVersion}"
 
+    // Gson
+    const val gson = "com.google.code.gson:gson:${Versions.gsonVersion}"
 }
