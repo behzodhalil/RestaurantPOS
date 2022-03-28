@@ -29,5 +29,5 @@ object Versions {
     const val imagePickerVersion = "2.1"
     const val glideVersion = "4.13.0"
     const val workManagerWithHiltVersion = "1.0.0-alpha02"
-
+    const val gsonVersion = "2.8.6"
 }
