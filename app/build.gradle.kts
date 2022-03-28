@@ -77,4 +77,5 @@ dependencies {
     imagePicker()
     glide()
     workManagerWithHilt()
+    gson()
 }
