@@ -6,10 +6,12 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import uz.behzoddev.restaurantpos.data.repositories.ItemRepositoryImpl
 import uz.behzoddev.restaurantpos.data.repositories.MenuRepositoryImpl
+import uz.behzoddev.restaurantpos.data.repositories.OrderRepositoryImpl
 import uz.behzoddev.restaurantpos.data.repositories.StoreRepositoryImpl
 import uz.behzoddev.restaurantpos.di.annotations.RepositoryBinds
 import uz.behzoddev.restaurantpos.domain.repositories.ItemRepository
 import uz.behzoddev.restaurantpos.domain.repositories.MenuRepository
+import uz.behzoddev.restaurantpos.domain.repositories.OrderRepository
 import uz.behzoddev.restaurantpos.domain.repositories.StoreRepository
 import javax.inject.Singleton
 
@@ -37,4 +39,10 @@ abstract class RepositoryModule {
     internal abstract fun provideStoreRepositoryInstance(
         storeRepositoryImpl: StoreRepositoryImpl
     ): StoreRepository
+
+    @Binds
+    @Singleton
+    internal abstract fun provideOrderRepositoryInstance(
+        orderRepositoryImpl: OrderRepositoryImpl
+    ): OrderRepository
 }
