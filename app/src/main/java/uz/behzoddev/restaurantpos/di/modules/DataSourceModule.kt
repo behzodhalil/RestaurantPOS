@@ -32,4 +32,8 @@ abstract class DataSourceModule {
     abstract fun provideStoreDatasourceInstance(
         storeDataSourceImpl: StoreDataSourceImpl
     ): StoreDataSource
+
+    @Binds
+    @Singleton
+    internal abstract fun provideOrderDatasourceInstance(orderDataSourceImpl: OrderDataSourceImpl): OrderDataSource
 }
