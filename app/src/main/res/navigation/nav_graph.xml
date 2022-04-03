@@ -102,6 +102,9 @@
         <action
             android:id="@+id/actionMenuFragmentToDetailConfirmFragment"
             app:destination="@id/detailConfirmFragment" />
+        <action android:id="@+id/actionMenuFragment"
+            app:destination="@+id/menuFragment"
+            />
     </fragment>
     <fragment
         android:id="@+id/detailConfirmFragment"
@@ -115,15 +118,6 @@
         <argument
             android:name="food_item"
             app:argType="uz.behzoddev.restaurantpos.data.local.models.FoodItem" />
-    </fragment>
-    <fragment
-        android:id="@+id/coldBrewCoffeeFragment"
-        android:name="uz.behzoddev.restaurantpos.view.menu.ColdBrewCoffeeFragment"
-        android:label="fragment_cold_brew_coffee"
-        tools:layout="@layout/fragment_cold_brew_coffee" >
-        <action
-            android:id="@+id/action_coldBrewCoffeeFragment_to_detailConfirmFragment"
-            app:destination="@id/detailConfirmFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
