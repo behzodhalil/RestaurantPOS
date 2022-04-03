@@ -19,8 +19,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class FrappuccinoFragment : BaseFragment<FragmentFrappuccinoBinding>() {
 
-    @Inject
-    lateinit var frappuccinoAdapter: OrderStoreAdapter
+    private val frappuccinoAdapter = OrderStoreAdapter()
     private val frappuccinoViewModel: FrappuccinoViewModel by viewModels()
 
     override fun getViewBinding(
