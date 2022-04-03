@@ -19,8 +19,8 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class BroodFragment : BaseFragment<FragmentBroodBinding>() {
 
-    @Inject
-    lateinit var broodAdapter: OrderStoreAdapter
+
+    private val broodAdapter = OrderStoreAdapter()
     private val broodViewModel: BroodViewModel by viewModels()
 
     override fun getViewBinding(
