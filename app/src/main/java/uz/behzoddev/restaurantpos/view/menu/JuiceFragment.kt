@@ -19,8 +19,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class JuiceFragment : BaseFragment<FragmentJuiceBinding>() {
 
-    @Inject
-    lateinit var juiceAdapter: OrderStoreAdapter
+    private val juiceAdapter = OrderStoreAdapter()
     private val juiceViewModel: JuiceViewModel by viewModels()
 
     override fun getViewBinding(
