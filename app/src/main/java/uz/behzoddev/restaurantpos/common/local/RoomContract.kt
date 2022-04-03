@@ -34,6 +34,7 @@ object RoomContract {
     object FoodOrderContract {
         const val FOOD_ORDER_TABLE = "food_order_table"
         const val FOOD_ORDER_ITEMS = "food_order_items"
+        const val FOOD_ORDER_QUANTITY = "food_order_quantity"
         const val FOOD_ORDER_TOTAL_AMOUNT = "food_oder_total_amount"
         const val FOOD_ORDER_TOTAL_QUANTITY = "food_order_total_quantity"
         const val FOOD_ORDER_NUMBER = "food_order_number"
@@ -45,6 +46,7 @@ object RoomContract {
         const val FOOD_ORDER_CUSTOMER = "food_order_customer"
         const val FOOD_ORDER_IS_VALID = "food_order_is_valid"
         const val FOOD_ORDER_ID = "food_order_id"
+
     }
     object FoodStoreContract {
         const val FOOD_STORE_TABLE = "food_store_table"
