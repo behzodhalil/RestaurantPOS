@@ -19,8 +19,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class BlendedFragment : BaseFragment<FragmentBlendedBinding>() {
 
-    @Inject
-    lateinit var blendedAdapter: OrderStoreAdapter
+    private val blendedAdapter = OrderStoreAdapter()
     private val blendedViewModel : BlendedViewModel by viewModels()
 
     override fun getViewBinding(
