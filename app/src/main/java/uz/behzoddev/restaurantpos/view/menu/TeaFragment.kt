@@ -1,6 +1,5 @@
 package uz.behzoddev.restaurantpos.view.menu
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,13 +14,12 @@ import uz.behzoddev.restaurantpos.data.local.models.FoodItem
 import uz.behzoddev.restaurantpos.databinding.FragmentTeaBinding
 import uz.behzoddev.restaurantpos.presentation.store.TeaViewModel
 import uz.behzoddev.restaurantpos.view.order_store.OrderStoreAdapter
-import javax.inject.Inject
+
 
 @AndroidEntryPoint
 class TeaFragment : BaseFragment<FragmentTeaBinding>() {
 
-    @Inject
-    lateinit var teaAdapter : OrderStoreAdapter
+    private val teaAdapter = OrderStoreAdapter()
     private val teaViewModel: TeaViewModel by viewModels()
 
     override fun getViewBinding(
