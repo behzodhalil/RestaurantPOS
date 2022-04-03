@@ -11,18 +11,19 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import uz.behzoddev.restaurantpos.R
 import uz.behzoddev.restaurantpos.common.base.BaseFragment
+import uz.behzoddev.restaurantpos.common.extensions.showToastLong
 import uz.behzoddev.restaurantpos.common.states.ItemState
 import uz.behzoddev.restaurantpos.data.local.models.FoodItem
+import uz.behzoddev.restaurantpos.data.local.models.FoodOrderItem
 import uz.behzoddev.restaurantpos.databinding.FragmentColdBrewCoffeeBinding
 import uz.behzoddev.restaurantpos.presentation.store.ColdBrewViewModel
 import uz.behzoddev.restaurantpos.view.order_store.OrderStoreAdapter
-import javax.inject.Inject
+
 
 @AndroidEntryPoint
 class ColdBrewCoffeeFragment : BaseFragment<FragmentColdBrewCoffeeBinding>() {
 
-    @Inject
-    lateinit var coldBrewAdapter: OrderStoreAdapter
+    private val coldBrewAdapter = OrderStoreAdapter()
     private val coldBrewViewModel: ColdBrewViewModel by viewModels()
 
     override fun getViewBinding(
@@ -32,11 +33,13 @@ class ColdBrewCoffeeFragment : BaseFragment<FragmentColdBrewCoffeeBinding>() {
         return FragmentColdBrewCoffeeBinding.inflate(inflater,container,false)
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initRecyclerView()
         observerColdBrew()
-        onClickColdBrew()
+        //onClickColdBrew()
+        onClickMenu()
     }
 
     private fun initRecyclerView() = with(binding) {
@@ -44,14 +47,26 @@ class ColdBrewCoffeeFragment : BaseFragment<FragmentColdBrewCoffeeBinding>() {
         // When you call that function, the size (with and height) of recycler view
         // won’t change on the adapter insert/update/delete
         coldBrewRecyclerView.setHasFixedSize(true)
+        coldBrewAdapter.setOnAddClickListener(object : OrderStoreAdapter.FoodItemListener {
+            override fun addToMenu(foodItem: FoodItem) {
+
+            }
+        })
     }
 
+    /*
     private fun onClickColdBrew() {
         coldBrewAdapter.setDetailClickListener {
             val bundle = Bundle().apply {
                 putParcelable("food_item",it)
             }
             findNavController().navigate(R.id.actionMenuFragmentToDetailConfirmFragment,bundle)
+        }
+    }*/
+
+    private fun onClickMenu() {
+        coldBrewAdapter.setOnClickListener {
+
         }
     }
     private fun observerColdBrew() = lifecycleScope.launchWhenCreated {
