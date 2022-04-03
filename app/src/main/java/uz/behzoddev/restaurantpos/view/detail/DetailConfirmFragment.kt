@@ -10,6 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
+import uz.behzoddev.restaurantpos.R
 import uz.behzoddev.restaurantpos.common.base.BaseFragment
 import uz.behzoddev.restaurantpos.common.states.DetailState
 import uz.behzoddev.restaurantpos.data.local.models.FoodItem
@@ -42,8 +43,7 @@ class DetailConfirmFragment : BaseFragment<FragmentItemDetailConfirmBinding>() {
 
     private fun onNavigationToMenu() = with(binding) {
         btnConfirm.setOnClickListener {
-            val actionDetailConfirmToMenu = DetailConfirmFragmentDirections.actionDetailConfirmToMenu()
-            findNavController().navigate(actionDetailConfirmToMenu)
+            findNavController().navigate(R.id.actionDetailConfirmToMenu)
         }
     }
     private fun observeDetail() = lifecycleScope.launchWhenCreated {
