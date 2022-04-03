@@ -21,8 +21,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class EspressoFragment : BaseFragment<FragmentEspresssoBinding>() {
 
-    @Inject
-    lateinit var espressoAdapter: OrderStoreAdapter
+    private val espressoAdapter = OrderStoreAdapter()
     private val espressoViewModel: EspressoViewModel by viewModels()
 
     override fun getViewBinding(
