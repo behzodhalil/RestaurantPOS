@@ -6,6 +6,10 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import uz.behzoddev.restaurantpos.domain.interactors.item.*
 import uz.behzoddev.restaurantpos.domain.interactors.menu.*
+import uz.behzoddev.restaurantpos.domain.interactors.order.FetchAllOrdersInteractor
+import uz.behzoddev.restaurantpos.domain.interactors.order.FetchAllOrdersInteractorImpl
+import uz.behzoddev.restaurantpos.domain.interactors.order.SaveOrderInteractor
+import uz.behzoddev.restaurantpos.domain.interactors.order.SaveOrderInteractorImpl
 import uz.behzoddev.restaurantpos.domain.interactors.store.*
 import javax.inject.Singleton
 
@@ -157,4 +161,16 @@ abstract class InteractorModule {
     internal abstract fun provideSaveAllFoods(
         saveAllFoodsInteractor: SaveAllFoodsInteractorImpl
     ): SaveAllFoodsInteractor
+
+    @Binds
+    @Singleton
+    internal abstract fun provideSaveOrderInteractor(
+        saveOrderInteractorImpl: SaveOrderInteractorImpl
+    ): SaveOrderInteractor
+
+    @Binds
+    @Singleton
+    internal abstract fun provideFetchAllOrder(
+        fetchAllOrdersInteractorImpl: FetchAllOrdersInteractorImpl
+    ): FetchAllOrdersInteractor
 }
