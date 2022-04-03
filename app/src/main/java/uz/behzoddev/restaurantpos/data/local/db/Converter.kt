@@ -3,6 +3,7 @@ package uz.behzoddev.restaurantpos.data.local.db
 import androidx.room.TypeConverter
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import uz.behzoddev.restaurantpos.data.local.models.FoodOrder
 import uz.behzoddev.restaurantpos.data.local.models.FoodOrderItem
 import java.util.*
 import javax.inject.Inject
@@ -22,12 +23,12 @@ class Converter {
     }
 
     @TypeConverter
-    fun fromOrderItemsArrayListToString(foodOrderItems: ArrayList<FoodOrderItem>): String {
+    fun fromOrderItemsArrayListToString(foodOrderItems: ArrayList<FoodOrder>): String {
         return gson.toJson(foodOrderItems)
     }
     @TypeConverter
-    fun fromStringToOrderItemsArrayList(string: String): ArrayList<FoodOrderItem> {
-        return gson.fromJson(string, object : TypeToken<ArrayList<FoodOrderItem>>() {}.type)
+    fun fromStringToOrderItemsArrayList(string: String): ArrayList<FoodOrder> {
+        return gson.fromJson(string, object : TypeToken<ArrayList<FoodOrder>>() {}.type)
     }
 
 }
