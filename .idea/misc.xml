@@ -12,11 +12,13 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/bg_table_layout.xml" value="0.1985" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/bg_table_menu_management.xml" value="0.1275" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/bg_unselected_tab.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/ic_back.xml" value="0.3005" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/ic_bag_shopping_light.xml" value="0.311" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/ic_invoice.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/ic_logo.xml" value="0.242" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/ic_menu_settings.xml" value="0.1045" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/ic_option_settings.xml" value="0.1045" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/ic_search.xml" value="0.3005" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/ic_store_light.xml" value="0.1935" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/selected_tab.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/drawable/shadow_bg_button.xml" value="0.2045" />
@@ -56,6 +58,7 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/item_expand_menu_footer.xml" value="0.11666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/item_expand_menu_header.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/item_food.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/item_order.xml" value="0.13" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/layout_add_item.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/layout_detail_item.xml" value="0.16" />
         <entry key="..\:/Users/user/AndroidStudioProjects/RestaurantPOS/app/src/main/res/layout/layout_menu_add.xml" value="0.15" />
