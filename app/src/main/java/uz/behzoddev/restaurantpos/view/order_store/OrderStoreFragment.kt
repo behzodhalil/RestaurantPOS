@@ -22,7 +22,6 @@ const val COFFEE_CATEGORY = "category"
 @AndroidEntryPoint
 class OrderStoreFragment : BaseFragment<FragmentOrderStoreBinding>() {
 
-    private lateinit var orderStoreAdapter: OrderStoreAdapter
     private lateinit var categoryAdapter: FoodCategoryAdapter
 
     private val orderStoreViewModel: OrderStoreViewModel by viewModels()
@@ -46,14 +45,9 @@ class OrderStoreFragment : BaseFragment<FragmentOrderStoreBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initRecyclerView()
         observerOrderStore()
     }
 
-    private fun initRecyclerView() = with(binding) {
-        orderStoreAdapter = OrderStoreAdapter()
-        orderStoreRecyclerView.adapter = orderStoreAdapter
-    }
 
     private fun initCategoryRecyclerView() = with(binding) {
 
@@ -66,7 +60,6 @@ class OrderStoreFragment : BaseFragment<FragmentOrderStoreBinding>() {
 
                 }
                 is ItemState.Success -> {
-                    fetchAllItems(result.data)
                     debug { "${result.data}" }
                 }
                 is ItemState.Empty -> {
@@ -79,6 +72,6 @@ class OrderStoreFragment : BaseFragment<FragmentOrderStoreBinding>() {
         }
     }
 
-    private fun fetchAllItems(list: List<FoodItem>) = orderStoreAdapter.diffUtil.submitList(list)
+
 
 }
