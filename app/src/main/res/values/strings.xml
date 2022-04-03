@@ -164,6 +164,9 @@
     <string name="text_detail_caffeine_value">190</string>
     <string name="text_detail_allergens">알레르기 유발요인:</string>
     <string name="text_detail_allergens_value">우유</string>
+    <string name="btn_text_decrease">-</string>
+    <string name="text_item_order_quantity">0</string>
+    <string name="text_button_increase">+</string>
 
 
 </resources>
