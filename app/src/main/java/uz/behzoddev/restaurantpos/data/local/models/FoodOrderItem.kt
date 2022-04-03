@@ -8,11 +8,7 @@ import kotlinx.parcelize.Parcelize
 data class FoodOrderItem(
     val item: FoodItem,
     var quantity: Int,
-    var note: String,
-    var extraCost: Float
 ): Parcelable {
-
-    fun getAmount() : Float = item.foodItemPrice * quantity + extraCost
-
+    fun getAmount (): Long = item.foodItemPrice * quantity
 }
 
