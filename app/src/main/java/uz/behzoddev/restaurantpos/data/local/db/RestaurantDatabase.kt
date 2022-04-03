@@ -19,9 +19,9 @@ import uz.behzoddev.restaurantpos.data.worker.RestaurantWorker
 
 @Database(
     entities = [FoodStore::class, FoodMenu::class, FoodItem::class,FoodOrder::class],
-    version = 11,
+    version = 13,
     autoMigrations = [
-        AutoMigration(from = 10, to = 11)
+        AutoMigration(from = 12, to = 13)
     ],
     exportSchema = true
 )
